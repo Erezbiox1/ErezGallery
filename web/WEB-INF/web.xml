@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <servlet-class>com.erezbiox1.servlets.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern> </url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Contact</servlet-name>
+        <servlet-class>com.erezbiox1.servlets.ContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Trips</servlet-name>
+        <servlet-class>com.erezbiox1.servlets.TripsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Trips</servlet-name>
+        <url-pattern>/trips</url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Photo</servlet-name>
+        <servlet-class>com.erezbiox1.servlets.PhotoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Photo</servlet-name>
+        <url-pattern>/412</url-pattern> <!-- TODO -->
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Trip</servlet-name>
+        <servlet-class>com.erezbiox1.servlets.TripServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Trip</servlet-name>
+        <url-pattern>/london</url-pattern> <!-- TODO -->
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
+</web-app>
