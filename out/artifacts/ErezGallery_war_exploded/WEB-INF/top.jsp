@@ -8,6 +8,18 @@
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
+<%
+    String active = (String) request.getAttribute("menu");
+    String home = "", trips = "", contact = "";
+
+    if(active.equals("home")) home = "eg-active";
+    if(active.equals("trips")) trips = "eg-active";
+    if(active.equals("contact")) contact = "eg-active";
+
+    String context = (String) request.getAttribute("context");
+    if(context == null)
+        context = "";
+%>
 <head>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -28,7 +40,7 @@
     <meta content="" name="twitter:url"/>
     <meta content="" name="twitter:card"/>
 
-    <link href="images/logo-colored.png" rel="shortcut icon">
+    <link href="<%=context%>images/logo-colored.png" rel="shortcut icon">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic,700' rel='stylesheet'
           type='text/css'>
@@ -36,22 +48,22 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="<%=context%>css/animate.css" rel="stylesheet">
     <!-- Icomoon Icon Fonts-->
-    <link href="css/icomoon.css" rel="stylesheet">
+    <link href="<%=context%>css/icomoon.css" rel="stylesheet">
     <!-- Bootstrap  -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="<%=context%>css/bootstrap.css" rel="stylesheet">
     <!-- Owl Carousel -->
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="<%=context%>css/owl.carousel.min.css" rel="stylesheet">
+    <link href="<%=context%>css/owl.theme.default.min.css" rel="stylesheet">
     <!-- Theme style  -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<%=context%>css/style.css" rel="stylesheet">
 
     <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="<%=context%>js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
+    <script src="<%=context%>js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -59,19 +71,12 @@
 <div id="eg-page">
     <a class="js-eg-nav-toggle eg-nav-toggle" href="#"><i></i></a>
     <aside class="border js-fullheight" id="eg-aside" role="complementary">
-        <h1 id="eg-logo"><a href="index.jsp"><img alt="Bio Gallery" src="images/logo-colored.png"></a></h1>
+        <h1 id="eg-logo"><a href="<%=context%>index.jsp"><img alt="Bio Gallery" src="<%=context%>images/logo-colored.png"></a></h1>
         <nav id="eg-main-menu" role="navigation">
             <ul>
-                <%
-                    String active = (String) request.getAttribute("menu");
-                    String home = "", trips = "", contact = "";
-                    if(active.equals("home")) home = "eg-active";
-                    if(active.equals("trips")) trips = "eg-active";
-                    if(active.equals("contact")) contact = "eg-active";
-                %>
-                <li class="<%=home%>"><a href="/">Home</a></li>
-                <li class="<%=trips%>"><a href="trips">Trips</a></li>
-                <li class="<%=contact%>"><a href="contact">Contact</a></li>
+                <li class="<%=home%>"><a href="<%=context%>">Home</a></li>
+                <li class="<%=trips%>"><a href="<%=context%>trips">Trips</a></li>
+                <li class="<%=contact%>"><a href="<%=context%>contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -80,10 +85,10 @@
                 <small>&copy; 2018 Erezbiox1</small>
             </p>
             <ul>
-                <li><a href="mailto:erezbiox1@gmail.com"><i class="icon-envelope"></i></a></li>
-                <li><a href="https://twitter.com/erezbiox1"><i class="icon-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/erezrotem1/"><i class="icon-instagram"></i></a></li>
-                <li><a href="login"><i class="icon-key"></i></a></li>
+                <li><a href="<%=context%>mailto:erezbiox1@gmail.com"><i class="icon-envelope"></i></a></li>
+                <li><a href="<%=context%>https://twitter.com/erezbiox1"><i class="icon-twitter"></i></a></li>
+                <li><a href="<%=context%>https://www.instagram.com/erezrotem1/"><i class="icon-instagram"></i></a></li>
+                <li><a href="<%=context%>login"><i class="icon-key"></i></a></li>
             </ul>
         </div>
 

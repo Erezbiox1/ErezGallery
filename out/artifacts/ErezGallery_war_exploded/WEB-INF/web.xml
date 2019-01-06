@@ -38,7 +38,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Photo</servlet-name>
-        <url-pattern>/p/*</url-pattern> <!-- TODO -->
+        <url-pattern>/p/*</url-pattern>
     </servlet-mapping>
     <!--////////////////////////////////////-->
     <servlet>
@@ -47,7 +47,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Trip</servlet-name>
-        <url-pattern>/t/*</url-pattern> <!-- TODO -->
+        <url-pattern>/t/*</url-pattern>
     </servlet-mapping>
     <!--////////////////////////////////////-->
 </web-app>
