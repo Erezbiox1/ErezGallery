@@ -10,11 +10,19 @@ import javax.servlet.http.HttpServletResponse
  */
 abstract class AbstractServlet(val name: String, val menu: String) : HttpServlet() {
     override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
-        request.setAttribute("menu", menu)
-        request.getRequestDispatcher("/WEB-INF/jsp/$name.jsp").forward(request, response)
+        setAttributes(request)
+        forward(request, response, name)
     }
 
     override fun doPost(request: HttpServletRequest, response: HttpServletResponse) {
         doGet(request, response)
+    }
+
+    fun setAttributes(request: HttpServletRequest){
+        request.setAttribute("menu", menu)
+    }
+
+    fun forward(request: HttpServletRequest, response: HttpServletResponse, file: String){
+        request.getRequestDispatcher("/WEB-INF/jsp/$file.jsp").forward(request, response)
     }
 }

@@ -9,4 +9,10 @@ import javax.servlet.http.HttpServletResponse
  * Created by Erezbiox1 on 29/12/2018.
  * (C) 2018 Erez Rotem All Rights Reserved.
  */
-class TripServlet : AbstractServlet("trip", "trips") {}
+class TripServlet : AbstractServlet("trip", "trips") {
+    override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
+        request.setAttribute("context", "../")
+        println("trip: " + request.requestURI.split("/").last())
+        super.doGet(request, response)
+    }
+}

@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-
     <!--////////////////////////////////////-->
     <servlet>
         <servlet-name>Index</servlet-name>
@@ -39,7 +38,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Photo</servlet-name>
-        <url-pattern>/412</url-pattern> <!-- TODO -->
+        <url-pattern>/p/*</url-pattern> <!-- TODO -->
     </servlet-mapping>
     <!--////////////////////////////////////-->
     <servlet>
@@ -48,7 +47,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Trip</servlet-name>
-        <url-pattern>/london</url-pattern> <!-- TODO -->
+        <url-pattern>/t/*</url-pattern> <!-- TODO -->
     </servlet-mapping>
     <!--////////////////////////////////////-->
 </web-app>

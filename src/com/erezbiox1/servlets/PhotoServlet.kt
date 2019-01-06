@@ -9,4 +9,10 @@ import javax.servlet.http.HttpServletResponse
  * Created by Erezbiox1 on 29/12/2018.
  * (C) 2018 Erez Rotem All Rights Reserved.
  */
-class PhotoServlet : AbstractServlet("photo", "trips") {}
+class PhotoServlet : AbstractServlet("photo", "trips") {
+    override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
+        request.setAttribute("context", "../")
+        println("photo: " + request.requestURI.split("/").last())
+        super.doGet(request, response)
+    }
+}
