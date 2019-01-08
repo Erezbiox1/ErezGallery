@@ -21,8 +21,7 @@ object DB {
 
 }
 
-fun sql(query: String, vararg objects: Any, single: Boolean = true, function: ((ResultSet?) -> Unit)? = null) {
-
+fun sql(query: String, vararg objects: Any, single: Boolean = true, function: ((ResultSet) -> Unit)? = null) {
     val db = DB.database.connection
 
     val statement = db.prepareStatement(query)
@@ -38,9 +37,26 @@ fun sql(query: String, vararg objects: Any, single: Boolean = true, function: ((
                 statement.resultSet
             else null
 
-    function?.invoke(result)
+    result?.let {
+        function?.invoke(it)
+    }
 
     result?.close()
     statement.close()
     db.close()
+}
+
+inline fun <reified T> ResultSet?.get(column: Int = 1) : T? {
+    if(this == null)
+        return null
+
+    return when(T::class){
+        java.lang.Integer::class -> this.getInt(column) as T
+        java.lang.Integer::class.java -> this.getInt(column) as T
+        java.lang.Boolean::class -> this.getBoolean(column) as T
+        java.lang.Boolean::class.java -> this.getBoolean(column) as T
+        java.sql.Date::class -> this.getDate(column) as T
+        java.sql.Date::class.java -> this.getDate(column) as T
+        else -> this.getString(column) as T
+    }
 }

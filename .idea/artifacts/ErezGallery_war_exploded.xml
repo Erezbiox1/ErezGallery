@@ -8,8 +8,13 @@
           <element id="module-output" name="ErezGallery" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="KotlinJavaRuntime" />
-          <element id="library" level="project" name="JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" />
+          <element id="library" level="project" name="Kotlin" />
+          <element id="library" level="project" name="JspAPI" />
+          <element id="library" level="project" name="Gson" />
+          <element id="library" level="project" name="Websockets" />
+          <element id="library" level="project" name="HikariCP" />
+          <element id="library" level="project" name="slf4j" />
+          <element id="library" level="project" name="mysql-connector-java" />
         </element>
       </element>
     </root>

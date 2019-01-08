@@ -14,6 +14,11 @@ class IndexServlet : AbstractServlet("index", "home") {
     override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
         val photos = PhotoManager.getPhotoArray(null, false) // TODO PRIVILEGED
 
+        if(photos == null){
+            response.sendError(404, "Please contact the sites administrator.")
+            return
+        }
+
         request.setAttribute("photos", photos)
         request.setAttribute("context", "../")
 

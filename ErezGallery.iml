@@ -22,8 +22,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" level="project" />
-    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
-    <orderEntry type="library" name="WebPackage" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="JspAPI" level="project" />
+    <orderEntry type="library" name="Kotlin" level="project" />
+    <orderEntry type="library" name="Gson" level="project" />
+    <orderEntry type="library" name="ServletAPI" level="project" />
+    <orderEntry type="library" name="Websockets" level="project" />
+    <orderEntry type="library" name="HikariCP" level="project" />
+    <orderEntry type="library" name="slf4j" level="project" />
+    <orderEntry type="library" name="mysql-connector-java" level="project" />
   </component>
 </module>

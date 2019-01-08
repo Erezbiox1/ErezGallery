@@ -15,6 +15,11 @@ class TripServlet : AbstractServlet("trip", "trips") {
         val argument = request.requestURI.split("/").last()
         val photos = PhotoManager.getPhotoArray(argument.toLowerCase(), false) // TODO PRIVILEGED
 
+        if(photos == null){
+            response.sendError(404, "Sorry! No such trip. if you believe this is an error, please contact the site administrator.")
+            return
+        }
+
         request.setAttribute("photos", photos)
         request.setAttribute("context", "../")
 
