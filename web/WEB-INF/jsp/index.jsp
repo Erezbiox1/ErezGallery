@@ -1,118 +1,22 @@
 <%@include file="../top.jsp"%>
     <div class="eg-gallery">
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_2.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_2.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_3.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_4.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_5.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_6.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_7.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_8.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
+    <%
+        String[][] photos = (String[][]) request.getAttribute("photos");
 
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_9.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_10.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_11.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_12.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_13.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_14.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_15.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
-        <a class="gallery-item" href="p/412">
-            <img alt="Photo" src="images/work_16.jpg">
-            <span class="overlay">
-						<h2>A dog.</h2>
-						<span>London</span>
-                </span>
-        </a>
+        for(String[] photo: photos){
+            String id = photo[0];
+            String trip = photo[1];
+            String name = photo[2];
+    %>
+    <a class="gallery-item" href="<%=context%>p/<%=id%>">
+        <img alt="Photo" src="<%=context%>photos/<%=id%>.jpg">
+        <span class="overlay">
+                        <h2><%=name%></h2>
+                        <span><%=trip%></span>
+                    </span>
+    </a>
+    <%
+        }
+    %>
     </div>
 <%@include file="../bottom.jsp"%>
