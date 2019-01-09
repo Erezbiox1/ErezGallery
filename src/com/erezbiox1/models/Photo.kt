@@ -1,4 +1,4 @@
-package com.erezbiox1
+package com.erezbiox1.models
 
 /**
  * Created by Erezbiox1 on 08/01/2019.

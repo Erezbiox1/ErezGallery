@@ -1,4 +1,4 @@
-package com.erezbiox1
+package com.erezbiox1.utils
 
 import com.zaxxer.hikari.HikariDataSource
 import java.sql.ResultSet
