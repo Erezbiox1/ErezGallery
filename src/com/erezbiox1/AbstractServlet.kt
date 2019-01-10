@@ -25,4 +25,24 @@ abstract class AbstractServlet(val name: String, val menu: String) : HttpServlet
     fun forward(request: HttpServletRequest, response: HttpServletResponse, file: String){
         request.getRequestDispatcher("/WEB-INF/jsp/$file.jsp").forward(request, response)
     }
+
+    fun getIP(request: HttpServletRequest) : String {
+        var ip = request.getHeader("X-Forwarded-For")
+        if (ip.isNullOrEmpty() || ip.equals("unknown", ignoreCase = false)) {
+            ip = request.getHeader("Proxy-Client-IP")
+        }
+        if (ip.isNullOrEmpty() || ip.equals("unknown", ignoreCase = false)) {
+            ip = request.getHeader("WL-Proxy-Client-IP")
+        }
+        if (ip.isNullOrEmpty() || ip.equals("unknown", ignoreCase = false)) {
+            ip = request.getHeader("HTTP_CLIENT_IP")
+        }
+        if (ip.isNullOrEmpty() || ip.equals("unknown", ignoreCase = false)) {
+            ip = request.getHeader("HTTP_X_FORWARDED_FOR")
+        }
+        if (ip.isNullOrEmpty() || ip.equals("unknown", ignoreCase = false)) {
+            ip = request.remoteAddr
+        }
+        return ip
+    }
 }
