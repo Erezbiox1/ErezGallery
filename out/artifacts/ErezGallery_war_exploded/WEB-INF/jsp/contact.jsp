@@ -8,7 +8,7 @@
                                 <i class="icon-envelope-o"></i>
                             </div>
                             <div class="eg-text">
-                                <p><a href="#">Erezbiox1@gmail.com</a></p>
+                                <p><a href="mailto:Erezbiox1@gmail.com">Erezbiox1@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -61,6 +61,17 @@
                                 <div class="form-group">
                                     <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                                 </div>
+                                <input type="hidden" id="ip" name="ip">
+                                <script>
+                                    var http = new XMLHttpRequest();
+                                    http.onreadystatechange = function() {
+                                        if (this.readyState == 4 && this.status == 200) {
+                                            document.getElementById("ip").value = this.responseText;
+                                        }
+                                    };
+                                    http.open("GET", "https://ipecho.net/plain", true);
+                                    http.send();
+                                </script>
                                 <div class="form-group">
                                     <input type="submit" class="btn btn-primary btn-md" value="Send Message">
                                 </div>

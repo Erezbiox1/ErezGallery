@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67c22666-d44d-41fe-806c-534ff6bd54e1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/AbstractServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/AbstractServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/ContactServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/ContactServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/AbstractServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/AbstractServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/ContactServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/ContactServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/AbstractServlet.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/AbstractServlet.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/servlets/ContactServlet.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/servlets/ContactServlet.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/contact.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/contact.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/jsp/contact.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/jsp/contact.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/top.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/top.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,23 +96,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/212b81b6-6aaf-46cf-b2a8-95133d634578/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactServlet.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContactServlet.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/ContactServlet.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
-                <element signature="e#32#190#0" expanded="true" />
                 <marker date="1547103550354" expanded="true" signature="1003:1094" ph="INSERT INTO tickets... " />
               </folding>
             </state>
@@ -137,8 +129,8 @@
             <state relative-caret-position="34">
               <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
+                <element signature="e#23#151#0" expanded="true" />
                 <element signature="n#!!block;n#doPost#0;n#!!block;n#AbstractServlet#0" expanded="false" />
-                <marker date="1547040694750" expanded="true" signature="327:1741" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -149,6 +141,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="704">
               <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/top.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="76" column="48" lean-forward="false" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -238,7 +240,6 @@
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/RequestingServlet.kt" />
         <option value="$PROJECT_DIR$/web/WEB-INF/bottom.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/photo.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/top.jsp" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/trip.jsp" />
@@ -260,6 +261,7 @@
         <option value="$PROJECT_DIR$/src/com/erezbiox1/AbstractServlet.kt" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/contact.jsp" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/ContactServlet.kt" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/top.jsp" />
       </list>
     </option>
   </component>
@@ -997,7 +999,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21643394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21643394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1055,7 +1057,8 @@
     <MESSAGE value="Organized a bit" />
     <MESSAGE value="Created a SQL interface, hooked up the index.jsp and trips.jsp to the database" />
     <MESSAGE value="Made the trips dynamic, hooked it up with sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the trips dynamic, hooked it up with sql" />
+    <MESSAGE value="Finalized the contact.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalized the contact.jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1246,14 +1249,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/RequestingServlet.kt" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="59" lean-forward="false" selection-start-line="76" selection-start-column="59" selection-end-line="76" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/photo.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1403,30 +1398,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/AbstractServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!block;n#doPost#0;n#!!block;n#AbstractServlet#0" expanded="false" />
-            <marker date="1547040694750" expanded="true" signature="327:1741" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/contact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/trips.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/ContactServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <marker date="1547103550354" expanded="true" signature="1003:1094" ph="INSERT INTO tickets... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1443,14 +1429,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/ContactServlet.kt">
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/AbstractServlet.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#32#190#0" expanded="true" />
-            <marker date="1547103550354" expanded="true" signature="1003:1094" ph="INSERT INTO tickets... " />
+            <element signature="e#23#151#0" expanded="true" />
+            <element signature="n#!!block;n#doPost#0;n#!!block;n#AbstractServlet#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/contact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="76" column="48" lean-forward="false" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
