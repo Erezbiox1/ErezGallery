@@ -20,7 +20,7 @@ class IndexServlet : AbstractServlet("index", "home") {
         }
 
         request.setAttribute("photos", photos)
-        request.setAttribute("context", "../")
+        //request.setAttribute("context", "../")
 
         super.doGet(request, response)
     }

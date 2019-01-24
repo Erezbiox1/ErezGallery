@@ -18,6 +18,14 @@ object PhotoManager {
         refresh()
     }
 
+    fun getPhoto(id: Int) : Photo? {
+        return photoCache.flatMap { it.value }.find { it.id == id }
+    }
+
+    fun getTrip(trip: String) : Trip? {
+        return tripCache.find { it.file == trip.toLowerCase() }
+    }
+
     fun getPhotoArray(trip: String?, privileged: Boolean) : Array<Array<String>>? {
         val list = (if(privileged) getPhotoList(trip) else getPhotoList(trip)?.filter { !it.hidden }) ?: return null
 
