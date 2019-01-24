@@ -74,7 +74,7 @@
         <h1 id="eg-logo"><a href="<%=context%>index.jsp"><img alt="Bio Gallery" src="<%=context%>images/logo-colored.png"></a></h1>
         <nav id="eg-main-menu" role="navigation">
             <ul>
-                <li class="<%=home%>"><a href="<%=context%>">Home</a></li>
+                <li class="<%=home%>"><a href="/<%=context%>">Home</a></li>
                 <li class="<%=trips%>"><a href="<%=context%>trips">Trips</a></li>
                 <li class="<%=contact%>"><a href="<%=context%>contact">Contact</a></li>
             </ul>
