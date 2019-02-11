@@ -50,4 +50,25 @@
         <url-pattern>/t/*</url-pattern>
     </servlet-mapping>
     <!--////////////////////////////////////-->
+    <!--              ADMIN                 -->
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.erezbiox1.admin.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/admin/login</url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.erezbiox1.admin.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/admin/register</url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
 </web-app>

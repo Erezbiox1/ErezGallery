@@ -88,7 +88,7 @@
                 <li><a href="<%=context%>mailto:erezbiox1@gmail.com"><i class="icon-envelope"></i></a></li>
                 <li><a href="<%=context%>https://twitter.com/erezbiox1"><i class="icon-twitter"></i></a></li>
                 <li><a href="<%=context%>https://www.instagram.com/erezrotem1/"><i class="icon-instagram"></i></a></li>
-                <li><a href="<%=context%>login"><i class="icon-key"></i></a></li>
+                <li><a href="<%=context%>/admin/login"><i class="icon-key"></i></a></li>
             </ul>
         </div>
 

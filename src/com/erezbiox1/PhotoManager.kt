@@ -19,14 +19,17 @@ object PhotoManager {
     }
 
     fun getPhoto(id: Int) : Photo? {
+        refresh() // TODO REMOVE
         return photoCache.flatMap { it.value }.find { it.id == id }
     }
 
     fun getTrip(trip: String) : Trip? {
+        refresh() // TODO REMOVE
         return tripCache.find { it.file == trip.toLowerCase() }
     }
 
     fun getPhotoArray(trip: String?, privileged: Boolean) : Array<Array<String>>? {
+        refresh() // TODO REMOVE
         val list = (if(privileged) getPhotoList(trip) else getPhotoList(trip)?.filter { !it.hidden }) ?: return null
 
         val arrayList = mutableListOf<Array<String>>()
@@ -38,6 +41,7 @@ object PhotoManager {
     }
 
     private fun getPhotoList(trip: String?) : List<Photo>? {
+        refresh() // TODO REMOVE
         val list: MutableList<Photo>
         if(trip != null){
             val photos = photoCache[trip] ?: return null
