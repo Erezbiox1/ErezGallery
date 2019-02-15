@@ -1,6 +1,8 @@
 package com.erezbiox1.admin
 
 import com.erezbiox1.AbstractServlet
+import com.erezbiox1.utils.Utils
+import com.erezbiox1.utils.sql
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -14,29 +16,42 @@ class LoginServlet : AbstractServlet("admin/login", ""){
         val password: String? = request.getParameter("password")
         val remember: Boolean? = request.getParameter("remember")?.let { it == "on" }
 
-        if(username.isNullOrBlank()){
-            response.writer.print("Invalid Username.")
+        val respond: (String) -> Unit = {
+            response.writer.print(it)
             response.writer.close()
+        }
+
+        // <editor-fold desc="Basic Checks">
+        if(username.isNullOrBlank()){
+            respond("Empty Username.")
+            return
+        }else username!!
+
+        if(username.length !in 4..12){
+            respond("Username size must be between 4 and 12.")
+            return
+        }
+
+        if(!Utils.checkString(username, letters = true, numbers = true, special = false)){
+            respond("Username can only have letters and numbers.")
             return
         }
 
         if(password.isNullOrBlank()){
-            response.writer.print("Invalid Password.")
-            response.writer.close()
+            respond("Empty Password.")
             return
+        }else password!!
+
+        if(password.length !in 6..32){
+            respond("Password size must be bigger than 6.")
         }
 
         if(remember == null){
-            response.writer.print("Invalid Request.")
-            response.writer.close()
+            respond("Invalid Request.")
             return
         }
+        //</editor-fold>
 
-        println("=========")
-        println("user: $username")
-        println("pass: $password")
-        println("remb: $remember")
-
-        response.writer.print("success")
+        respond("success")
     }
 }

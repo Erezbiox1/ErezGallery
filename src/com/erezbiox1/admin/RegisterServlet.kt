@@ -1,6 +1,7 @@
 package com.erezbiox1.admin
 
 import com.erezbiox1.AbstractServlet
+import com.erezbiox1.utils.Utils
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -15,30 +16,58 @@ class RegisterServlet : AbstractServlet("admin/register", ""){
         val password: String? = request.getParameter("password")
         val repassword: String? = request.getParameter("repassword")
 
-        if(username.isNullOrBlank()){
-            response.writer.print("Invalid Username.")
+        val respond: (String) -> Unit = {
+            response.writer.print(it)
             response.writer.close()
+        }
+
+        // <editor-fold desc="Basic Checks">
+        if(username.isNullOrBlank()){
+            respond("Empty Username.")
+            return
+        }else username!!
+
+        if(username.length !in 4..12){
+            respond("Username size must be between 4 and 12.")
+            return
+        }
+
+        if(!Utils.checkString(username, letters = true, numbers = true, special = false)){
+            respond("Username can only have letters and numbers.")
             return
         }
 
         if(email.isNullOrBlank()){
-            response.writer.print("Invalid Email.")
-            response.writer.close()
+            respond("Empty email.")
+            return
+        }else email!!
+
+        if(!Utils.isEmailValid(email)){
+            respond("Invalid email.")
             return
         }
 
-        if(password.isNullOrBlank() || repassword.isNullOrBlank()){
-            response.writer.print("Invalid Password.")
-            response.writer.close()
+        if(password.isNullOrBlank()){
+            respond("Empty Password.")
+            return
+        }else password!!
+
+        if(password.length !in 6..32){
+            respond("Password size must be bigger than 6.")
             return
         }
 
-        println("=========")
-        println("user: $username")
-        println("email: $email")
-        println("pass: $password")
-        println("repass: $repassword")
+        if(repassword.isNullOrBlank()){
+            respond("Please repeat your password.")
+            return
+        }
 
-        response.writer.println("success")
+        if(password != repassword){
+            respond("Passwords does not match.")
+            return
+        }
+        //</editor-fold>
+
+        respond("success")
     }
 }
