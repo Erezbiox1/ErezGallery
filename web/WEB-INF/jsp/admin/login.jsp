@@ -1,9 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <%
-  String context = (String) request.getAttribute("context");
-  if(context == null)
-    context = "";
+  String context = "/gallery/";
 %>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -33,10 +31,10 @@
     <!-- End Page Loading -->
     <div id="login-page" class="row">
       <div class="col s12 z-depth-4 card-panel">
-        <form class="login-form" action="" method="post">
+        <form id="form" class="login-form">
           <div class="row">
             <div class="input-field col s12 center">
-              <img src="<%=context%>images/logo/logo.png" alt="" class=" responsive-img valign profile-image-login">
+              <img src="<%=context%>images/logo-colored.png" alt="" class=" responsive-img valign profile-image-login">
               <p class="center login-form-text">Erez's Gallery | Login</p>
             </div>
           </div>
@@ -62,7 +60,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-                <button type="submit" class="btn waves-effect waves-light col s12 green">Login</button>  <!--TODO-->
+                <a onclick="login(document.getElementById('form'))" class="btn waves-effect waves-light col s12 green">Login</a>  <!--TODO-->
             </div>
           </div>
           <div class="row">
@@ -76,6 +74,7 @@
     <script type="text/javascript" src="<%=context%>/admin/vendors/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/js/materialize.min.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/js/plugins.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/js/custom-script.js"></script>
   </body>

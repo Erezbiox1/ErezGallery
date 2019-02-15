@@ -16,9 +16,7 @@
     if(active.equals("trips")) trips = "eg-active";
     if(active.equals("contact")) contact = "eg-active";
 
-    String context = (String) request.getAttribute("context");
-    if(context == null)
-        context = "";
+    String context = "/gallery/";
 %>
 <head>
     <meta charset="utf-8">
@@ -71,10 +69,10 @@
 <div id="eg-page">
     <a class="js-eg-nav-toggle eg-nav-toggle" href="#"><i></i></a>
     <aside class="border js-fullheight" id="eg-aside" role="complementary">
-        <h1 id="eg-logo"><a href="<%=context%>index.jsp"><img alt="Bio Gallery" src="<%=context%>images/logo-colored.png"></a></h1>
+        <h1 id="eg-logo"><a href="<%=context%>"><img alt="Bio Gallery" src="<%=context%>images/logo-colored.png"></a></h1>
         <nav id="eg-main-menu" role="navigation">
             <ul>
-                <li class="<%=home%>"><a href="/<%=context%>">Home</a></li>
+                <li class="<%=home%>"><a href="<%=context%>">Home</a></li>
                 <li class="<%=trips%>"><a href="<%=context%>trips">Trips</a></li>
                 <li class="<%=contact%>"><a href="<%=context%>contact">Contact</a></li>
             </ul>
@@ -88,7 +86,7 @@
                 <li><a href="<%=context%>mailto:erezbiox1@gmail.com"><i class="icon-envelope"></i></a></li>
                 <li><a href="<%=context%>https://twitter.com/erezbiox1"><i class="icon-twitter"></i></a></li>
                 <li><a href="<%=context%>https://www.instagram.com/erezrotem1/"><i class="icon-instagram"></i></a></li>
-                <li><a href="<%=context%>/admin/login"><i class="icon-key"></i></a></li>
+                <li><a href="<%=context%>admin/login"><i class="icon-key"></i></a></li>
             </ul>
         </div>
 

@@ -1,9 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <%
-  String context = (String) request.getAttribute("context");
-  if(context == null)
-    context = "";
+  String context = "/gallery/";
 %>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,7 +10,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <title>Erez's Gallery | Register</title>
     <!-- Favicons-->
-    <link rel="icon" href="<%=context%>/admin/images/logo/logo.png" sizes="32x32">
+    <link rel="icon" href="<%=context%>images/logo-colored.png" sizes="32x32">
     <link href="<%=context%>/admin/images/logo/logo.png" rel="shortcut icon">
     <!-- CORE CSS-->
     <link href="<%=context%>/admin/css/themes/collapsible-menu/materialize.css" type="text/css" rel="stylesheet">
@@ -33,7 +31,7 @@
     <!-- End Page Loading -->
     <div id="login-page" class="row">
       <div class="col s12 z-depth-4 card-panel">
-        <form class="login-form" action="" method="post">
+        <form  id="form" class="login-form">
           <div class="row">
             <div class="input-field col s12 center">
               <h4>Register</h4>
@@ -70,7 +68,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <button type="submit" class="btn waves-effect waves-light col s12 green">Register Now</button> <!--TODO-->
+              <a onclick="register(document.getElementById('form'))" class="btn waves-effect waves-light col s12 green">Register Now</a> <!--TODO-->
             </div>
             <div class="input-field col s12">
               <p class="margin center medium-small sign-up">Already have an account? <a href="login">Login</a></p>  <!--TODO-->
@@ -82,6 +80,7 @@
     <script type="text/javascript" src="<%=context%>/admin/vendors/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/js/materialize.min.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/js/plugins.js"></script>
     <script type="text/javascript" src="<%=context%>/admin/js/custom-script.js"></script>
   </body>

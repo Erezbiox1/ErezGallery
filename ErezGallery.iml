@@ -32,5 +32,6 @@
     <orderEntry type="library" name="mysql-connector-java" level="project" />
     <orderEntry type="library" name="Activation" level="project" />
     <orderEntry type="library" name="javax.mail:mail:1.4" level="project" />
+    <orderEntry type="library" name="sweetalert" level="application" />
   </component>
 </module>
