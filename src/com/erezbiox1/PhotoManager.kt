@@ -4,32 +4,15 @@ import com.erezbiox1.models.Photo
 import com.erezbiox1.models.Trip
 import com.erezbiox1.utils.get
 import com.erezbiox1.utils.sql
+import java.sql.ResultSet
 
 /**
  * Created by Erezbiox1 on 08/01/2019.
  * (C) 2019 Erez Rotem All Rights Reserved.
  */
-// Maybe use SQL instead of caching ( pros: more professional and flexible, expendable. cons: possibly slower, longer to write ) - TODO
 object PhotoManager {
-    private val photoCache = mutableMapOf<String, MutableList<Photo>>() // trip to photo list
-    private var tripCache = arrayOf<Trip>()
-
-    init {
-        refresh()
-    }
-
-    fun getPhoto(id: Int) : Photo? {
-        refresh() // TODO REMOVE
-        return photoCache.flatMap { it.value }.find { it.id == id }
-    }
-
-    fun getTrip(trip: String) : Trip? {
-        refresh() // TODO REMOVE
-        return tripCache.find { it.file == trip.toLowerCase() }
-    }
 
     fun getPhotoArray(trip: String?, privileged: Boolean) : Array<Array<String>>? {
-        refresh() // TODO REMOVE
         val list = (if(privileged) getPhotoList(trip) else getPhotoList(trip)?.filter { !it.hidden }) ?: return null
 
         val arrayList = mutableListOf<Array<String>>()
@@ -40,63 +23,80 @@ object PhotoManager {
         return arrayList.toTypedArray()
     }
 
+    fun getTripArray() : Array<Array<String>> {
+        val arrayList = mutableListOf<Array<String>>()
+        getTripList().forEach {
+            arrayList.add(arrayOf(it.name, it.file, it.date, it.desc))
+        }
+
+        arrayList[0][3] = getTripList()[0].highlight
+
+        return arrayList.toTypedArray()
+    }
+
+    //////////////////////////////////////////////////
+
+    fun getPhoto(id: Int) : Photo? {
+        var photo: Photo? = null
+        sql("SELECT * FROM photos WHERE id=?", id) {
+            photo = getPhotoFromResult(it)
+        }
+        return photo
+    }
+
+    fun getTrip(trip: String) : Trip? {
+        var result: Trip? = null
+        sql("SELECT * FROM trips WHERE name=?", trip) {
+            result = getTripFromResult(it)
+        }
+        return result
+    }
+
     private fun getPhotoList(trip: String?) : List<Photo>? {
-        refresh() // TODO REMOVE
-        val list: MutableList<Photo>
-        if(trip != null){
-            val photos = photoCache[trip] ?: return null
-            list = photos.toMutableList()
-        }else{
-            list = mutableListOf()
-            photoCache.forEach { _, photos ->
-                list.addAll(photos)
+        val list = mutableListOf<Photo>()
+        val function: (ResultSet) -> Unit = {
+            while (it.next()) {
+                list.add(getPhotoFromResult(it))
+            }
+        }
+        if(trip == null)
+            sql("SELECT * FROM photos", single = false, function = function)
+        else
+            sql("SELECT * FROM photos WHERE trip=?", trip, single = false, function = function)
+
+        return list
+    }
+
+    private fun getTripList() : List<Trip> {
+        val list = mutableListOf<Trip>()
+        sql("SELECT * FROM trips ORDER BY id DESC", single = false){
+            while(it.next()){
+                list.add(getTripFromResult(it))
             }
         }
         return list
     }
 
-    fun getTripArray() : Array<Array<String>>{
-        val arrayList = mutableListOf<Array<String>>()
-        tripCache.forEach {
-            arrayList.add(arrayOf(it.name, it.file, it.date, it.desc))
-        }
+    /////////////////////////////////////////////////
 
-        arrayList[0][3] = tripCache[0].highlight
+    private fun getTripFromResult(db: ResultSet) : Trip {
+        val id =   db.get<Int>   (1) ?: error("SQL fetch an null id ( Shouldn't be possible )")
+        val file = db.get<String>(2) ?: error("SQL fetch an null file ( Shouldn't be possible )")
+        val name = db.get<String>(3) ?: error("SQL fetch an null name ( Shouldn't be possible )")
+        val date = db.get<String>(4) ?: "Unknown Date"
+        val desc = db.get<String>(5) ?: "Empty Description"
+        val high = db.get<String>(6) ?: "Empty Description"
 
-        return arrayList.toTypedArray()
+        return Trip(id, name, file, date, desc, high)
     }
 
-    fun refresh(){
-        photoCache.clear()
+    private fun getPhotoFromResult(db: ResultSet) : Photo {
+        val id = db.get<Int>(1) ?: error("SQL fetch an null id ( Shouldn't be possible )")
+        val trip = db.get<String>(2) ?: error("SQL fetch an null trip ( Shouldn't be possible )")
+        val name = db.get<String?>(3) ?: "Untitled Photo"
+        val desc = db.get<String?>(4) ?: ""
+        val hidden = db.get<Boolean>(5) ?: false
 
-        sql("SELECT * FROM photos", single = false) {
-            while (it.next()) {
-                val id = it.get<Int>(1) ?: error("SQL fetch an null id ( Shouldn't be possible )")
-                val trip = it.get<String>(2) ?: error("SQL fetch an null trip ( Shouldn't be possible )")
-                val name = it.get<String?>(3) ?: "Untitled Photo"
-                val desc = it.get<String?>(4) ?: ""
-                val hidden = it.get<Boolean>(5) ?: false
-
-                val photo = Photo(id, trip, name, desc, hidden)
-                photoCache.getOrPut(trip, { mutableListOf() }).add(photo)
-            }
-        }
-
-        sql("SELECT * FROM trips ORDER BY id DESC", single = false){
-            val list = mutableListOf<Trip>()
-
-            while(it.next()){
-                val id =   it.get<Int>   (1) ?: error("SQL fetch an null id ( Shouldn't be possible )")
-                val file = it.get<String>(2) ?: error("SQL fetch an null file ( Shouldn't be possible )")
-                val name = it.get<String>(3) ?: error("SQL fetch an null name ( Shouldn't be possible )")
-                val date = it.get<String>(4) ?: "Unknown Date"
-                val desc = it.get<String>(5) ?: "Empty Description"
-                val high = it.get<String>(6) ?: "Empty Description"
-
-                list.add(Trip(id, name, file, date, desc, high))
-            }
-
-            tripCache = list.toTypedArray()
-        }
+        return Photo(id, trip, name, desc, hidden)
     }
 }
