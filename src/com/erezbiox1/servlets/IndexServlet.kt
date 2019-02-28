@@ -2,6 +2,7 @@ package com.erezbiox1.servlets
 
 import com.erezbiox1.AbstractServlet
 import com.erezbiox1.PhotoManager
+import com.erezbiox1.SessionManager
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
@@ -20,7 +21,6 @@ class IndexServlet : AbstractServlet("index", "home") {
         }
 
         request.setAttribute("photos", photos)
-        //request.setAttribute("context", "../")
 
         super.doGet(request, response)
     }

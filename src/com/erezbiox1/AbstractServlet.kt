@@ -1,5 +1,6 @@
 package com.erezbiox1
 
+import com.erezbiox1.models.User
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
@@ -44,5 +45,9 @@ abstract class AbstractServlet(val name: String, val menu: String) : HttpServlet
             ip = request.remoteAddr
         }
         return ip
+    }
+
+    fun HttpServletRequest.getUser() : User? {
+        return SessionManager.getSession(this)?.user
     }
 }

@@ -1,8 +1,12 @@
 package com.erezbiox1.admin
 
 import com.erezbiox1.AbstractServlet
+import com.erezbiox1.SessionManager
+import com.erezbiox1.models.User
 import com.erezbiox1.utils.Utils
+import com.erezbiox1.utils.get
 import com.erezbiox1.utils.sql
+import javax.servlet.http.Cookie
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -27,24 +31,10 @@ class LoginServlet : AbstractServlet("admin/login", ""){
             return
         }else username!!
 
-        if(username.length !in 4..12){
-            respond("Username size must be between 4 and 12.")
-            return
-        }
-
-        if(!Utils.checkString(username, letters = true, numbers = true, special = false)){
-            respond("Username can only have letters and numbers.")
-            return
-        }
-
         if(password.isNullOrBlank()){
             respond("Empty Password.")
             return
         }else password!!
-
-        if(password.length !in 6..32){
-            respond("Password size must be bigger than 6.")
-        }
 
         if(remember == null){
             respond("Invalid Request.")
@@ -52,6 +42,26 @@ class LoginServlet : AbstractServlet("admin/login", ""){
         }
         //</editor-fold>
 
+        var id: Int? = null
+        var role: String? = null
+        sql("SELECT id, role FROM users WHERE LOWER(username)=LOWER(?) AND password=?", username, password){
+            id = it.get<Int>(1)
+            role = it.get<String>(2)
+        }
+
+        if(id == null || role == null){
+            respond("Invalid username or password.")
+            return
+        }
+
+        SessionManager.getSession(request)!!.user = User(id!!)
+        response.addCookie(Cookie("lastUser", username))
         respond("success")
+    }
+
+    override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
+        if(request.getUser() != null){
+            response.sendRedirect("/gallery")
+        }else super.doGet(request, response)
     }
 }

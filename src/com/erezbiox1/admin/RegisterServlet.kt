@@ -1,7 +1,12 @@
 package com.erezbiox1.admin
 
 import com.erezbiox1.AbstractServlet
+import com.erezbiox1.SessionManager
+import com.erezbiox1.models.User
 import com.erezbiox1.utils.Utils
+import com.erezbiox1.utils.get
+import com.erezbiox1.utils.sql
+import javax.servlet.http.Cookie
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -68,6 +73,30 @@ class RegisterServlet : AbstractServlet("admin/register", ""){
         }
         //</editor-fold>
 
+        var id: Int? = null
+        sql("SELECT id FROM users WHERE LOWER(username)=LOWER(?)", username){
+            id = it.get<Int>()
+        }
+
+        if(id != null){
+            respond("Username is taken.")
+            return
+        }
+
+        sql("INSERT INTO users (username, password, email) VALUES (?, ?, ?)", username, password, email)
+
+        sql("SELECT id FROM users WHERE LOWER(username)=LOWER(?)", username){
+            id = it.get<Int>()
+        }
+
+        SessionManager.getSession(request)?.user = User(id!!)
+        response.addCookie(Cookie("lastUser", username))
         respond("success")
+    }
+
+    override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
+        if(request.getUser() != null){
+            response.sendRedirect("/gallery")
+        }else super.doGet(request, response)
     }
 }

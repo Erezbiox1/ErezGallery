@@ -31,7 +31,7 @@
     <!-- End Page Loading -->
     <div id="login-page" class="row">
       <div class="col s12 z-depth-4 card-panel">
-        <form  id="form" class="login-form">
+        <form id="form" class="login-form">
           <div class="row">
             <div class="input-field col s12 center">
               <h4>Register</h4>

@@ -1,7 +1,7 @@
 function redirect(){
     setTimeout(function () {
         window.location = document.location.origin + "/gallery"
-    }, 2000)
+    }, 1500)
 }
 
 function login(form){
@@ -19,6 +19,7 @@ function login(form){
         success: function(text){
             if(text == "success"){
                 swal("Success!", "Logged in successfully, redirecting...", "success")
+                redirect()
             }else{
                 swal("Error!", text, "error")
             }
@@ -33,13 +34,13 @@ function register(form){
             {
                 username: form.username.value,
                 email: form.email.value,
-                password: form.remember.value,
+                password: form.password.value,
                 repassword: form.repassword.value
             },
         success: function(text){
             if(text == "success"){
                 swal("Success!", "Registered successfully, redirecting...", "success")
-
+                redirect()
             }else{
                 swal("Error!", text, "error")
             }
