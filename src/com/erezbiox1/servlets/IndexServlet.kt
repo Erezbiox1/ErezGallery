@@ -13,7 +13,10 @@ import javax.servlet.http.HttpServletResponse
  */
 class IndexServlet : AbstractServlet("index", "home") {
     override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
-        val photos = PhotoManager.getPhotoArray(null, false) // TODO PRIVILEGED
+        val user = request.getUser()
+
+        val privileged = user?.let { it.getRole() != "guest" } ?: false
+        val photos = PhotoManager.getPhotoArray(null, privileged)
 
         if(photos == null){
             response.sendError(404, "Please contact the sites administrator.")

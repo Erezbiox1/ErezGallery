@@ -12,9 +12,11 @@ import javax.servlet.http.HttpServletResponse
  */
 class PhotoServlet : AbstractServlet("photo", "trips") {
     override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
+        val user = request.getUser()
         request.setAttribute("context", "../")
+
         val arg = request.requestURI.split("/").last().toIntOrNull()
-        val privileged = false
+        val privileged = user?.let { it.getRole() != "guest" } ?: false
 
         val photo = if(arg == null) null else PhotoManager.getPhoto(arg)
         val trip = photo?.let { PhotoManager.getTrip(photo.trip) }

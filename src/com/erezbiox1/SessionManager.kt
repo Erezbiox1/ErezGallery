@@ -44,7 +44,6 @@ class SessionManager : Filter {
 
     override fun destroy() {}
 
-
     companion object {
         private val sessionMap = mutableMapOf<String, Session>()
 

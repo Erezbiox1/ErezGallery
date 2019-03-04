@@ -13,7 +13,10 @@ import javax.servlet.http.HttpServletResponse
 class TripServlet : AbstractServlet("trip", "trips") {
     override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
         val argument = request.requestURI.split("/").last()
-        val photos = PhotoManager.getPhotoArray(argument.toLowerCase(), false) // TODO PRIVILEGED
+        val user = request.getUser()
+
+        val privileged = user?.let { it.getRole() != "guest" } ?: false
+        val photos = PhotoManager.getPhotoArray(argument.toLowerCase(), privileged)
 
         if(photos == null){
             response.sendError(404, "Sorry! No such trip. if you believe this is an error, please contact the site administrator.")
