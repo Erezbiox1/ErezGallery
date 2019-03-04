@@ -1,3 +1,5 @@
+<%@ page import="com.erezbiox1.models.User" %>
+<%@ page import="com.erezbiox1.SessionManager" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
@@ -86,7 +88,23 @@
                 <li><a href="<%=context%>mailto:erezbiox1@gmail.com"><i class="icon-envelope"></i></a></li>
                 <li><a href="<%=context%>https://twitter.com/erezbiox1"><i class="icon-twitter"></i></a></li>
                 <li><a href="<%=context%>https://www.instagram.com/erezrotem1/"><i class="icon-instagram"></i></a></li>
+                <%
+                    String role = "guest";
+                    SessionManager.Session s = SessionManager.Companion.getSession(request);
+                    if(s != null && s.getUser() != null){
+                        role = s.getUser().getRole();
+                    }
+
+                    if(role != null && role.equals("guest")){
+                %>
                 <li><a href="<%=context%>admin/login"><i class="icon-key"></i></a></li>
+                <%
+                    }else{
+                %>
+                <li><a href="<%=context%>admin/logout"><i class="icon-lock"></i></a></li>
+                <%
+                    }
+                %>
             </ul>
         </div>
 

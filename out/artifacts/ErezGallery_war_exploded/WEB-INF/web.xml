@@ -81,4 +81,14 @@
         <url-pattern>/admin/register</url-pattern>
     </servlet-mapping>
     <!--////////////////////////////////////-->
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.erezbiox1.admin.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/admin/logout</url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
 </web-app>

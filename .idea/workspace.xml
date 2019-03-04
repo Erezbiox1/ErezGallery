@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67c22666-d44d-41fe-806c-534ff6bd54e1" name="Default" comment="PhotoManager is now">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/refresh.jsp" afterPath="" />
+    <list default="true" id="67c22666-d44d-41fe-806c-534ff6bd54e1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/erezbiox1/admin/LogoutServlet.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/IndexServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/IndexServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/PhotoServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/PhotoServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/TripServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/TripServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/IndexServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/IndexServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/PhotoServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/PhotoServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/TripServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/TripServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/PhotoManager.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/PhotoManager.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/top.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/top.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/top.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/top.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/js/custom-script.js" afterPath="$PROJECT_DIR$/web/admin/js/custom-script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,15 +44,45 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="gallery@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="photos" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="RegisterServlet.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/RegisterServlet.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+              <folding>
+                <element signature="e#29#353#0" expanded="false" />
+                <marker date="1551337715359" expanded="true" signature="2243:2293" ph="SELECT id FR... users" />
+                <marker date="1551337715359" expanded="true" signature="2243:2294" ph="SELECT id FR... users" />
+                <marker date="1551337715359" expanded="true" signature="2459:2521" ph="INSERT INTO users... " />
+                <marker date="1551337715359" expanded="true" signature="2565:2616" ph="SELECT id FR... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PhotoManager.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/PhotoManager.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="309">
+              <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
               <folding>
                 <element signature="e#23#177#0" expanded="true" />
                 <element signature="n#!!doc;n#PhotoManager#0" expanded="false" />
@@ -52,33 +92,26 @@
                 <element signature="e#1197#1251#2" expanded="false" />
                 <element signature="n#!!block;n#getTrip#0;n#!!block;n#PhotoManager#0" expanded="false" />
                 <element signature="e#1407#1461#2" expanded="false" />
-                <element signature="n#!!block;n#getPhotoList#0;n#!!block;n#PhotoManager#0" expanded="false" />
-                <element signature="e#1638#1744#1" expanded="false" />
                 <element signature="e#1670#1734#1" expanded="false" />
                 <element signature="n#!!block;n#getTripList#0;n#!!block;n#PhotoManager#0" expanded="false" />
                 <element signature="e#2137#2240#2" expanded="false" />
                 <element signature="e#2167#2230#1" expanded="false" />
                 <element signature="n#!!block;n#getTripFromResult#0;n#!!block;n#PhotoManager#0" expanded="false" />
                 <element signature="n#!!block;n#getPhotoFromResult#0;n#!!block;n#PhotoManager#0" expanded="false" />
-                <marker date="1551339463847" expanded="false" signature="1787:1807" ph="SELECT * FRO... photos" />
-                <marker date="1551339463847" expanded="false" signature="1877:1910" ph="SELECT * FRO... photos" />
+                <marker date="1551339463847" expanded="true" signature="1787:1807" ph="SELECT * FRO... photos" />
+                <marker date="1551339463847" expanded="true" signature="1877:1910" ph="SELECT * FRO... photos" />
                 <marker date="1551339463847" expanded="false" signature="2083:2119" ph="SELECT * FRO... trips" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery.photos" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/1099fbfd/212b81b6-6aaf-46cf-b2a8-95133d634578/gallery.photos">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="PhotoServlet.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="71" />
               <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -86,9 +119,73 @@
       <file leaf-file-name="IndexServlet.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="51">
+              <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/top.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="103" column="74" lean-forward="false" selection-start-line="103" selection-start-column="74" selection-end-line="103" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutServlet.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/LogoutServlet.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TripServlet.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionManager.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding>
+                <element signature="e#23#221#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TripsServlet.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripsServlet.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#32#231#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +252,6 @@
         <option value="$PROJECT_DIR$/src/com/erezbiox1/models/Trip.kt" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/212b81b6-6aaf-46cf-b2a8-95133d634578/console.sql" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/contact.jsp" />
-        <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/photo.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/trip.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
@@ -166,27 +262,29 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/admin/register.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/admin/login.jsp" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/AbstractAdminServlet.kt" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/top.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/utils/DB.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/utils/Utils.kt" />
         <option value="$PROJECT_DIR$/web/role.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/js/custom-script.js" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/GeneralFilter.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/GeneralFilter.kt" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/UserSessionManager.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/AbstractServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/models/User.kt" />
-        <option value="$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt" />
         <option value="$PROJECT_DIR$/web/refresh.jsp" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/admin/LoginServlet.kt" />
-        <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/admin/RegisterServlet.kt" />
-        <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/TripsServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/PhotoManager.kt" />
+        <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt" />
+        <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt" />
+        <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt" />
+        <option value="$PROJECT_DIR$/web/admin/js/custom-script.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt" />
+        <option value="$PROJECT_DIR$/src/com/erezbiox1/admin/LogoutServlet.kt" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/top.jsp" />
       </list>
     </option>
   </component>
@@ -224,9 +322,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,6 +352,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ErezGallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ErezGallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,9 +565,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\WEB-INF\jsp" />
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\src\com\erezbiox1\utils" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos\trips" />
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.erezbiox1.admin" />
@@ -458,9 +578,9 @@
       <recent name="com.erezbiox1" />
       <recent name="com.erezbiox1.models" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos\trips" />
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\WEB-INF\jsp" />
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\src\com\erezbiox1\utils" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -962,7 +1082,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -973,7 +1093,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21558245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21558245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -984,10 +1104,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39116204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39116204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22919819" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1010,26 +1130,26 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21558245" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21558245" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39116204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22617246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1077,7 +1197,9 @@
     <MESSAGE value="Connected the frontend and the backend of the login" />
     <MESSAGE value="Added login and register basic checks" />
     <MESSAGE value="Finished login and register, added a custom session handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished login and register, added a custom session handler" />
+    <MESSAGE value="Removed PhotoManager cache. It's now a purely DB connector" />
+    <MESSAGE value="Added a basic photo permission check" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a basic photo permission check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1089,31 +1211,13 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt</url>
-          <line>52</line>
+          <url>file://$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt</url>
+          <line>14</line>
           <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-field">
-          <url>file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt</url>
-          <line>48</line>
-          <properties myFieldName="sessionMap" myClassName="com.erezbiox1.SessionManager.Companion" />
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1126,14 +1230,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1146,9 +1242,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#32#231#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,14 +1320,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/utils/a.kt" />
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/utils/Mail.kt" />
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/1099fbfd/212b81b6-6aaf-46cf-b2a8-95133d634578/gallery.trips">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1284,22 +1370,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/role.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/js/custom-script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1325,14 +1395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/utils/Utils.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1351,57 +1413,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/refresh.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="e#23#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1099fbfd/212b81b6-6aaf-46cf-b2a8-95133d634578/gallery.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/refresh.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/LoginServlet.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
           <folding>
-            <element signature="e#29#353#0" expanded="true" />
+            <element signature="e#29#353#0" expanded="false" />
             <marker date="1551337473484" expanded="true" signature="1421:1493" ph="SELECT id FR... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/RegisterServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-          <folding>
-            <marker date="1551337715359" expanded="true" signature="2243:2293" ph="SELECT id FR... users" />
-            <marker date="1551337715359" expanded="true" signature="2243:2294" ph="SELECT id FR... users" />
-            <marker date="1551337715359" expanded="true" signature="2459:2521" ph="INSERT INTO users... " />
-            <marker date="1551337715359" expanded="true" signature="2565:2616" ph="SELECT id FR... users" />
           </folding>
         </state>
       </provider>
@@ -1428,58 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripsServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/PhotoManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding>
-            <element signature="e#23#177#0" expanded="true" />
-            <element signature="n#!!doc;n#PhotoManager#0" expanded="false" />
-            <element signature="n#!!block;n#getPhotoArray#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <element signature="n#!!block;n#getTripArray#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <element signature="n#!!block;n#getPhoto#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <element signature="e#1197#1251#2" expanded="false" />
-            <element signature="n#!!block;n#getTrip#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <element signature="e#1407#1461#2" expanded="false" />
-            <element signature="n#!!block;n#getPhotoList#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <element signature="e#1638#1744#1" expanded="false" />
-            <element signature="e#1670#1734#1" expanded="false" />
-            <element signature="n#!!block;n#getTripList#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <element signature="e#2137#2240#2" expanded="false" />
-            <element signature="e#2167#2230#1" expanded="false" />
-            <element signature="n#!!block;n#getTripFromResult#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <element signature="n#!!block;n#getPhotoFromResult#0;n#!!block;n#PhotoManager#0" expanded="false" />
-            <marker date="1551339463847" expanded="false" signature="1787:1807" ph="SELECT * FRO... photos" />
-            <marker date="1551339463847" expanded="false" signature="1877:1910" ph="SELECT * FRO... photos" />
-            <marker date="1551339463847" expanded="false" signature="2083:2119" ph="SELECT * FRO... trips" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/1099fbfd/212b81b6-6aaf-46cf-b2a8-95133d634578/gallery.photos">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1490,6 +1457,135 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/1099fbfd/212b81b6-6aaf-46cf-b2a8-95133d634578/gallery.users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/PhotoManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <element signature="e#23#177#0" expanded="true" />
+            <element signature="n#!!doc;n#PhotoManager#0" expanded="false" />
+            <element signature="n#!!block;n#getPhotoArray#0;n#!!block;n#PhotoManager#0" expanded="false" />
+            <element signature="n#!!block;n#getTripArray#0;n#!!block;n#PhotoManager#0" expanded="false" />
+            <element signature="n#!!block;n#getPhoto#0;n#!!block;n#PhotoManager#0" expanded="false" />
+            <element signature="e#1197#1251#2" expanded="false" />
+            <element signature="n#!!block;n#getTrip#0;n#!!block;n#PhotoManager#0" expanded="false" />
+            <element signature="e#1407#1461#2" expanded="false" />
+            <element signature="e#1670#1734#1" expanded="false" />
+            <element signature="n#!!block;n#getTripList#0;n#!!block;n#PhotoManager#0" expanded="false" />
+            <element signature="e#2137#2240#2" expanded="false" />
+            <element signature="e#2167#2230#1" expanded="false" />
+            <element signature="n#!!block;n#getTripFromResult#0;n#!!block;n#PhotoManager#0" expanded="false" />
+            <element signature="n#!!block;n#getPhotoFromResult#0;n#!!block;n#PhotoManager#0" expanded="false" />
+            <marker date="1551339463847" expanded="true" signature="1787:1807" ph="SELECT * FRO... photos" />
+            <marker date="1551339463847" expanded="true" signature="1877:1910" ph="SELECT * FRO... photos" />
+            <marker date="1551339463847" expanded="false" signature="2083:2119" ph="SELECT * FRO... trips" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/RegisterServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding>
+            <element signature="e#29#353#0" expanded="false" />
+            <marker date="1551337715359" expanded="true" signature="2243:2293" ph="SELECT id FR... users" />
+            <marker date="1551337715359" expanded="true" signature="2243:2294" ph="SELECT id FR... users" />
+            <marker date="1551337715359" expanded="true" signature="2459:2521" ph="INSERT INTO users... " />
+            <marker date="1551337715359" expanded="true" signature="2565:2616" ph="SELECT id FR... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripsServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#32#231#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/js/custom-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="e#23#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/LogoutServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="103" column="74" lean-forward="false" selection-start-line="103" selection-start-column="74" selection-end-line="103" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>

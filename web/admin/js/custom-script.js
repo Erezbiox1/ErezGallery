@@ -1,7 +1,7 @@
 function redirect(){
     setTimeout(function () {
         window.location = document.location.origin + "/gallery"
-    }, 1500)
+    }, 750)
 }
 
 function login(form){
