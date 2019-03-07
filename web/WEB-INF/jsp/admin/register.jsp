@@ -31,7 +31,7 @@
     <!-- End Page Loading -->
     <div id="login-page" class="row">
       <div class="col s12 z-depth-4 card-panel">
-        <form id="form" class="login-form">
+        <form id="form" class="login-form" onsubmit="return registerForm(event)">
           <div class="row">
             <div class="input-field col s12 center">
               <h4>Register</h4>
@@ -68,7 +68,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <a onclick="register(document.getElementById('form'))" class="btn waves-effect waves-light col s12 green">Register Now</a> <!--TODO-->
+              <button type="submit" class="btn waves-effect waves-light col s12 green">Register Now</button>
             </div>
             <div class="input-field col s12">
               <p class="margin center medium-small sign-up">Already have an account? <a href="login">Login</a></p>  <!--TODO-->

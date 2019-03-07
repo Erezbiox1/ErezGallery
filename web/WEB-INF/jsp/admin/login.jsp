@@ -31,7 +31,7 @@
     <!-- End Page Loading -->
     <div id="login-page" class="row">
       <div class="col s12 z-depth-4 card-panel">
-        <form id="form" class="login-form">
+        <form id="form" class="login-form" onsubmit="return loginForm(event)">
           <div class="row">
             <div class="input-field col s12 center">
               <img src="<%=context%>images/logo-colored.png" alt="" class=" responsive-img valign profile-image-login">
@@ -41,7 +41,7 @@
           <div class="row margin">
             <div class="input-field col s12">
               <i class="material-icons prefix pt-5">person_outline</i>
-              <input name="username" id="username" type="text">
+              <input name="username" id="username" type="text" autofocus>
               <label for="username" class="center-align">Username</label>
             </div>
           </div>
@@ -60,7 +60,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-                <a onclick="login(document.getElementById('form'))" class="btn waves-effect waves-light col s12 green">Login</a>  <!--TODO-->
+                <button type="submit" class="btn waves-effect waves-light col s12 green">Login</button>
             </div>
           </div>
           <div class="row">

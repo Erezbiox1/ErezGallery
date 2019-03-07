@@ -4,6 +4,18 @@ function redirect(){
     }, 750)
 }
 
+function loginForm(event) {
+    event.preventDefault();
+    login(event.target)
+    return false;
+}
+
+function registerForm(event) {
+    event.preventDefault();
+    register(event.target)
+    return false;
+}
+
 function login(form){
     console.log("LOGIN:")
     console.log("user: " + form.username.value)
