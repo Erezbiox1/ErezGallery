@@ -15,7 +15,7 @@ class TripServlet : AbstractServlet("trip", "trips") {
         val argument = request.requestURI.split("/").last()
         val user = request.getUser()
 
-        val privileged = user?.let { it.getRole() != "guest" } ?: false
+        val privileged = user?.isAuthorized(5) ?: false
         val photos = PhotoManager.getPhotoArray(argument.toLowerCase(), privileged)
 
         if(photos == null){

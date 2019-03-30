@@ -16,7 +16,7 @@ class PhotoServlet : AbstractServlet("photo", "trips") {
         request.setAttribute("context", "../")
 
         val arg = request.requestURI.split("/").last().toIntOrNull()
-        val privileged = user?.let { it.getRole() != "guest" } ?: false
+        val privileged = user?.isAuthorized(5) ?: false
 
         val photo = if(arg == null) null else PhotoManager.getPhoto(arg)
         val trip = photo?.let { PhotoManager.getTrip(photo.trip) }

@@ -33,12 +33,6 @@ class SessionManager : Filter {
             response.addCookie(c)
         }
 
-/*
-        sessionMap[cookie]?.let {
-            request.setAttribute("session", it)
-        }
-*/
-
         chain.doFilter(request, response)
     }
 

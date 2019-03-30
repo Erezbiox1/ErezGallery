@@ -15,7 +15,7 @@ class IndexServlet : AbstractServlet("index", "home") {
     override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
         val user = request.getUser()
 
-        val privileged = user?.let { it.getRole() != "guest" } ?: false
+        val privileged = user?.isAuthorized(5) ?: false
         val photos = PhotoManager.getPhotoArray(null, privileged)
 
         if(photos == null){

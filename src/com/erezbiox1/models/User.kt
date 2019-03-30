@@ -16,6 +16,15 @@ class User(val id: Int) {
         return role
     }
 
+    fun isAuthorized(min: Int) : Boolean {
+        return min <= when(getRole()){
+            "admin" -> 10
+            "family" -> 5
+            "member" -> 2
+            else -> 1
+        }
+    }
+
     override fun toString(): String {
         return "User(id=$id)"
     }
