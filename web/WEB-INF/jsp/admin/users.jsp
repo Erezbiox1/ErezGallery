@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="<%=context%>/admin/images/favicon/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<%=context%>/admin/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="<%=context%>/admin/vendors/sweetalert/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="<%=context%>/admin/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="<%=context%>/admin/css/style.min.css">
     <link rel="stylesheet" type="text/css" href="<%=context%>/admin/css/custom.css">
@@ -37,8 +38,8 @@
           </ul>
           <!-- profile-dropdown-->
           <ul class="dropdown-content" id="profile-dropdown">
-            <li><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
-            <li><a class="grey-text text-darken-1" href="login.jsp"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+            <li><a class="grey-text text-darken-1" href="javascript:WIP()"><i class="material-icons">lock_outline</i> Lock</a></li>
+            <li><a class="grey-text text-darken-1" href="/gallery/admin/logout"><i class="material-icons">keyboard_tab</i> Logout</a></li>
           </ul>
         </div>
       </nav>
@@ -46,30 +47,30 @@
   </header>
   <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
     <div class="brand-sidebar">
-      <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index.html"><img src="<%=context%>/admin/images/logo/materialize-logo-color.png" alt="materialize logo"><span class="logo-text hide-on-med-and-down">Erez's Gallery</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
+      <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="javascript:WIP()"><img src="<%=context%>/admin/images/logo/materialize-logo-color.png" alt="materialize logo"><span class="logo-text hide-on-med-and-down">Erez's Gallery</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
     </div>
     <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow ps" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion" style="transform: translateX(0px);">
-      <li class="bold"><a class="waves-effect waves-cyan " href="index.html"><i class="material-icons">dashboard</i><span class="menu-title" data-i18n="">Dashboard</span></a>
+      <li class="bold"><a class="waves-effect waves-cyan " href="javascript:WIP()"><i class="material-icons">dashboard</i><span class="menu-title" data-i18n="">Dashboard</span></a>
       </li>
       <li class="navigation-header"><a class="navigation-header-text">Admin </a><i class="navigation-header-icon material-icons">more_horiz</i>
       </li>
-      <li class="bold"><a class="waves-effect waves-cyan " href="tickets.html"><i class="material-icons">speaker_notes</i><span class="menu-title" data-i18n="">Tickets</span></a>
+      <li class="bold"><a class="waves-effect waves-cyan " href="javascript:WIP()"><i class="material-icons">speaker_notes</i><span class="menu-title" data-i18n="">Tickets</span></a>
       </li>
-      <li class="active bold"><a class="waves-effect waves-cyan active " href="users.html"><i class="material-icons">face</i><span class="menu-title" data-i18n="">Users</span></a>
+      <li class="active bold"><a class="waves-effect waves-cyan active " href="#"><i class="material-icons">face</i><span class="menu-title" data-i18n="">Users</span></a>
       </li>
       <li class="bold"><a class="collapsible-body waves-effect waves-cyan " href="#"><i class="material-icons">camera_enhance</i><span class="menu-title" data-i18n="">Photos</span></a>
         <div class="collapsible-body">
           <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-            <li><a class="collapsible-body" href="trips.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Trips</span></a>
+            <li><a class="collapsible-body" href="javascript:WIP()" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Trips</span></a>
             </li>
-            <li><a class="collapsible-body" href="photos.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Photo Manager</span></a>
+            <li><a class="collapsible-body" href="javascript:WIP()" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Photo Manager</span></a>
             </li>
           </ul>
         </div>
       </li>
       <li class="navigation-header"><a class="navigation-header-text">Misc </a><i class="navigation-header-icon material-icons">more_horiz</i>
       </li>
-      <li class="bold"><a class="waves-effect waves-cyan " href="settings.html"><i class="material-icons">build</i><span class="menu-title" data-i18n="">Settings</span></a>
+      <li class="bold"><a class="waves-effect waves-cyan " href="javascript:WIP()"><i class="material-icons">build</i><span class="menu-title" data-i18n="">Settings</span></a>
       </li>
     </ul>
     <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
@@ -1303,6 +1304,7 @@
   </footer>
   <script src="<%=context%>/admin/js/materialize.min.js" type="text/javascript"></script>
   <script src="<%=context%>/admin/js/vendors.min.js" type="text/javascript"></script>
+  <script src="<%=context%>/admin/vendors/sweetalert/sweetalert.min.js" type="text/javascript"></script>
   <script src="<%=context%>/admin/js/custom/custom-script.js" type="text/javascript"></script>
   <script src="<%=context%>/admin/js/plugins.js" type="text/javascript"></script>
   <script src="<%=context%>/admin/js/scripts/app-contacts.js" type="text/javascript"></script>

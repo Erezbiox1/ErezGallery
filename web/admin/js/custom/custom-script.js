@@ -60,3 +60,6 @@ function register(form){
     });
 }
 
+function WIP(){
+    swal("Error!", "This section of the admin panel is not implemented yet.", "warning");
+}

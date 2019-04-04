@@ -101,6 +101,7 @@
                 <%
                     }else{
                 %>
+                <li><a href="<%=context%>admin"><i class="icon-cog"></i></a></li>
                 <li><a href="<%=context%>admin/logout"><i class="icon-lock"></i></a></li>
                 <%
                     }
