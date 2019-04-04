@@ -143,7 +143,22 @@
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;member&apos;</DefaultExpression>
     </column>
-    <key id="40" parent="12" name="PRIMARY">
+    <column id="40" parent="12" name="name">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;Jane Doe&apos;</DefaultExpression>
+    </column>
+    <column id="41" parent="12" name="lastIP">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;?&apos;</DefaultExpression>
+    </column>
+    <column id="42" parent="12" name="lastLogin">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <key id="43" parent="12" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>

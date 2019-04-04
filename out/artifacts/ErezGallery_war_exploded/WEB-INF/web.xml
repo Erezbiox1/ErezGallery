@@ -111,4 +111,14 @@
         <url-pattern>/admin/users</url-pattern>
     </servlet-mapping>
     <!--////////////////////////////////////-->
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>com.erezbiox1.admin.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
 </web-app>

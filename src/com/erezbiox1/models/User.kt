@@ -25,6 +25,10 @@ class User(val id: Int) {
         }
     }
 
+    fun login(ip: String){
+        sql("UPDATE users SET lastLogin=NOW(), lastIP=? WHERE id=?", ip, id)
+    }
+
     override fun toString(): String {
         return "User(id=$id)"
     }

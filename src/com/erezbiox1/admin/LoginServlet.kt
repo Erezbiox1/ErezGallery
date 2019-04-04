@@ -54,7 +54,9 @@ class LoginServlet : AbstractServlet("admin/login", ""){
             return
         }
 
-        SessionManager.getSession(request)!!.user = User(id!!)
+        val user = User(id!!)
+        user.login(getIP(request))
+        SessionManager.getSession(request)!!.user = user
         response.addCookie(Cookie("lastUser", username))
         respond("success")
     }

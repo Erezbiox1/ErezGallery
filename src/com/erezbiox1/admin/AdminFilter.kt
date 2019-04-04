@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse
  * (C) 2019 Erez Rotem All Rights Reserved.
  */
 class AdminFilter : Filter {
+    val debug = true
     val allowed = listOf(
             "/admin/login",
             "/admin/register",
@@ -22,8 +23,7 @@ class AdminFilter : Filter {
     override fun doFilter(req: ServletRequest, res: ServletResponse, chain: FilterChain) {
         val request = req as HttpServletRequest; val response = (res as HttpServletResponse)
         val isAdmin = SessionManager.getSession(request)?.user?.isAuthorized(10) ?: false
-        //println(request.servletPath)
-        if(isAdmin || allowed.find { request.servletPath.startsWith(it) } != null)
+        if(debug || isAdmin || allowed.find { request.servletPath.startsWith(it) } != null)
             chain.doFilter(req, res)
         else
             response.sendError(403, "Insufficient Permissions")
