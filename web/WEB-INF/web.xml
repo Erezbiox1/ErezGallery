@@ -101,4 +101,14 @@
         <url-pattern>/admin/logout</url-pattern>
     </servlet-mapping>
     <!--////////////////////////////////////-->
+    <!--////////////////////////////////////-->
+    <servlet>
+        <servlet-name>Users</servlet-name>
+        <servlet-class>com.erezbiox1.admin.UsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Users</servlet-name>
+        <url-pattern>/admin/users</url-pattern>
+    </servlet-mapping>
+    <!--////////////////////////////////////-->
 </web-app>

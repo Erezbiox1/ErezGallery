@@ -1,87 +1,84 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html lang="en">
 <%
   String context = "/gallery/";
 %>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msapplication-tap-highlight" content="no">
-    <title>Erez's Gallery | Register</title>
-    <!-- Favicons-->
-    <link rel="icon" href="<%=context%>images/logo-colored.png" sizes="32x32">
-    <link href="<%=context%>/admin/images/logo/logo.png" rel="shortcut icon">
-    <!-- CORE CSS-->
-    <link href="<%=context%>/admin/css/themes/collapsible-menu/materialize.css" type="text/css" rel="stylesheet">
-    <link href="<%=context%>/admin/css/themes/collapsible-menu/style.css" type="text/css" rel="stylesheet">
-    <!-- Custome CSS-->
-    <link href="<%=context%>/admin/css/custom/custom.css" type="text/css" rel="stylesheet">
-    <link href="<%=context%>/admin/css/layouts/page-center.css" type="text/css" rel="stylesheet">
-    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-    <link href="<%=context%>/admin/vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
-  </head>
-  <body class="green">
-    <!-- Start Page Loading -->
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div>
-    <!-- End Page Loading -->
-    <div id="login-page" class="row">
-      <div class="col s12 z-depth-4 card-panel">
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <title>Erez's Gallery | Register</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../images/logo-colored.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="${context}vendors/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="${context}vendors/sweetalert/sweetalert.css">
+  <link rel="stylesheet" type="text/css" href="${context}css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="${context}css/style.css">
+  <link rel="stylesheet" type="text/css" href="${context}css/pages/register.css">
+  <link rel="stylesheet" type="text/css" href="${context}css/custom/custom.css">
+</head>
+<!-- END: Head-->
+<body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu 1-column register-bg  blank-page blank-page" data-open="click" data-menu="vertical-modern-menu" data-col="1-column">
+<div class="row">
+  <div class="col s12">
+    <div class="container"><div id="register-page" class="row">
+      <div class="col s12 m6 l4 z-depth-4 card-panel border-radius-6 register-card bg-opacity-8">
         <form id="form" class="login-form" onsubmit="return registerForm(event)">
           <div class="row">
-            <div class="input-field col s12 center">
-              <h4>Register</h4>
-              <p class="center">Join us!</p>
+            <div class="input-field col s12">
+              <h5 class="ml-4">Register</h5>
+              <p class="ml-4">Join to our community now !</p>
             </div>
           </div>
           <div class="row margin">
             <div class="input-field col s12">
-              <i class="material-icons prefix pt-5">person_outline</i>
-              <input name="username" id="username" type="text">
+              <i class="material-icons prefix pt-2">person_outline</i>
+              <input id="username" name="username" type="text">
               <label for="username" class="center-align">Username</label>
             </div>
           </div>
           <div class="row margin">
             <div class="input-field col s12">
-              <i class="material-icons prefix pt-5">email</i>
-              <input name="email" id="email" type="email">
-              <label for="email" class="center-align">Email</label>
+              <i class="material-icons prefix pt-2">mail_outline</i>
+              <input id="email" name="email" type="email">
+              <label for="email">Email</label>
             </div>
           </div>
           <div class="row margin">
             <div class="input-field col s12">
-              <i class="material-icons prefix pt-5">lock_outline</i>
-              <input name="password" id="password" type="password">
+              <i class="material-icons prefix pt-2">lock_outline</i>
+              <input id="password" name="password" type="password">
               <label for="password">Password</label>
             </div>
           </div>
           <div class="row margin">
             <div class="input-field col s12">
-              <i class="material-icons prefix pt-5">lock_outline</i>
-              <input name="repassword" id="password-again" type="password">
+              <i class="material-icons prefix pt-2">lock_outline</i>
+              <input id="password-again" name="repassword" type="password">
               <label for="password-again">Password again</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <button type="submit" class="btn waves-effect waves-light col s12 green">Register Now</button>
+              <button type="submit" class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12">Register</button>
             </div>
+          </div>
+          <div class="row">
             <div class="input-field col s12">
-              <p class="margin center medium-small sign-up">Already have an account? <a href="login">Login</a></p>  <!--TODO-->
+              <p class="margin medium-small"><a href="login">Already have an account? Login</a></p>
             </div>
           </div>
         </form>
       </div>
     </div>
-    <script type="text/javascript" src="<%=context%>/admin/vendors/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="<%=context%>/admin/js/materialize.min.js"></script>
-    <script type="text/javascript" src="<%=context%>/admin/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript" src="<%=context%>/admin/js/plugins.js"></script>
-    <script type="text/javascript" src="<%=context%>/admin/js/custom-script.js"></script>
-  </body>
+    </div>
+  </div>
+</div>
+
+<script src="${context}js/vendors.min.js" type="text/javascript"></script>
+<script src="${context}vendors/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+<script src="${context}js/plugins.js" type="text/javascript"></script>
+<script src="${context}js/custom/custom-script.js" type="text/javascript"></script>
+</body>
 </html>

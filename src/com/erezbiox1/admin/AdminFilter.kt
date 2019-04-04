@@ -10,10 +10,20 @@ import javax.servlet.http.HttpServletResponse
  * (C) 2019 Erez Rotem All Rights Reserved.
  */
 class AdminFilter : Filter {
+    val allowed = listOf(
+            "/admin/login",
+            "/admin/register",
+            "/admin/js",
+            "/admin/vendors",
+            "/admin/css",
+            "/admin/fonts",
+            "/admin/images"
+    )
     override fun doFilter(req: ServletRequest, res: ServletResponse, chain: FilterChain) {
         val request = req as HttpServletRequest; val response = (res as HttpServletResponse)
         val isAdmin = SessionManager.getSession(request)?.user?.isAuthorized(10) ?: false
-        if(isAdmin || request.servletPath == "/login.jsp" || request.servletPath == "/register.jsp")
+        //println(request.servletPath)
+        if(isAdmin || allowed.find { request.servletPath.startsWith(it) } != null)
             chain.doFilter(req, res)
         else
             response.sendError(403, "Insufficient Permissions")

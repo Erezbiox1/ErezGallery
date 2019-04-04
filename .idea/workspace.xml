@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67c22666-d44d-41fe-806c-534ff6bd54e1" name="Default" comment="Authorization levels">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/IndexServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/IndexServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/PhotoServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/PhotoServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/TripServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/classes/com/erezbiox1/servlets/TripServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/IndexServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/IndexServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/PhotoServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/PhotoServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/TripServlet.class" afterPath="$PROJECT_DIR$/out/production/ErezGallery/com/erezbiox1/servlets/TripServlet.class" />
+    <list default="true" id="67c22666-d44d-41fe-806c-534ff6bd54e1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/erezbiox1/admin/UsersServlet.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/models/User.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/models/User.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ErezGallery_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/erezbiox1/admin/AdminFilter.kt" afterPath="$PROJECT_DIR$/src/com/erezbiox1/admin/AdminFilter.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/users.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/users.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,24 +70,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cookie.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/javax.servlet-api-3.1.0.jar!/javax/servlet/http/Cookie.class">
+      <file leaf-file-name="AdminFilter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/AdminFilter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="272">
+              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionManager.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="e#23#221#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1070">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="76" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,63 +115,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery.tickets" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1099fbfd/212b81b6-6aaf-46cf-b2a8-95133d634578/gallery.tickets">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gallery.photos" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1099fbfd/212b81b6-6aaf-46cf-b2a8-95133d634578/gallery.photos">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexServlet.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="1802">
+              <caret line="106" column="55" lean-forward="false" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/models/User.kt">
+      <file leaf-file-name="UsersServlet.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/UsersServlet.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding>
-                <marker date="1553935780283" expanded="true" signature="286:319" ph="SELECT role users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripServlet.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -197,6 +159,9 @@
       <find>request.getContextPath()</find>
       <find>href</find>
       <find>href=&quot;</find>
+      <find>&lt;%=context%&gt;/</find>
+      <find>../../../app-assets/</find>
+      <find>${context}admin/</find>
     </findStrings>
     <replaceStrings>
       <replace>p/412</replace>
@@ -207,6 +172,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -257,17 +223,19 @@
         <option value="$PROJECT_DIR$/src/com/erezbiox1/admin/RegisterServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/TripsServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/PhotoManager.kt" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/admin/LogoutServlet.kt" />
         <option value="$PROJECT_DIR$/web/WEB-INF/top.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp" />
         <option value="$PROJECT_DIR$/web/admin/js/custom-script.js" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/SessionManager.kt" />
         <option value="$PROJECT_DIR$/src/com/erezbiox1/models/User.kt" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/erezbiox1/admin/UsersServlet.kt" />
+        <option value="$PROJECT_DIR$/src/com/erezbiox1/admin/AdminFilter.kt" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp" />
       </list>
     </option>
   </component>
@@ -414,29 +382,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ErezGallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ErezGallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,9 +520,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos\trips" />
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\WEB-INF\jsp" />
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\src\com\erezbiox1\utils" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.erezbiox1.admin" />
@@ -587,10 +533,1034 @@
       <recent name="com.erezbiox1" />
       <recent name="com.erezbiox1.models" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\WEB-INF\jsp" />
-      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\src\com\erezbiox1\utils" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\WEB-INF\jsp\admin" />
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos\trips" />
+      <recent name="C:\Users\USER\Programming\Projects\ErezGallery\ErezGallery\web\photos" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/web.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-13.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-14.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-15.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-16.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-17.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/avatar/avatar-9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/materialize.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/materialize.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/plugins.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/plugins.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/perfect-scrollbar/perfect-scrollbar.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/perfect-scrollbar/perfect-scrollbar.min.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/erezbiox1/admin/AdminFilter.kt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/jsp/admin/users.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/custom.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/materialize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/materialize.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/advance-ui-media.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/advance-ui-media.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-calendar.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-calendar.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-chat.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-chat.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-contacts.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-contacts.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-email-content.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-email-content.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-email.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-email.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-sidebar.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-sidebar.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-todo.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/app-todo.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/badges.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/badges.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/cards-basic.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/cards-basic.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/charts-sparkline.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/charts-sparkline.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/component-navbar.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/component-navbar.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/contacts.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/contacts.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/css-media.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/css-media.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/dashboard-modern.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/dashboard-modern.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/dashboard.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/dashboard.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/data-tables.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/data-tables.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/eCommerce-products-page.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/eCommerce-products-page.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/error.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/error.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/forgot.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/forgot.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/form-wizard.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/form-wizard.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/gallery.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/gallery.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/icon.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/icon.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/intro.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/intro.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/invoice.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/invoice.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/lock.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/lock.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/login.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/login.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/map.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/map.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-404.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-404.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-500.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-500.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-blog.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-blog.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-contact.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-contact.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-faq.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-faq.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-knowledge.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-knowledge.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-maintenance.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-maintenance.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-search.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/page-search.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/pricing.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/pricing.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/product.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/product.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/profile.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/profile.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/register.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/register.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/user-profile-page.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/user-profile-page.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/variables.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/pages/variables.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/style.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/all.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/all.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/brands.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/brands.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/fontawesome.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/fontawesome.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/regular.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/regular.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/solid.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/solid.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/svg-with-js.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/svg-with-js.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/v4-shims.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/css/v4-shims.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/all.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/all.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/brands.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/brands.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/fontawesome.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/fontawesome.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/regular.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/regular.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/solid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/solid.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/v4-shims.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/js/v4-shims.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-brands-400.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-brands-400.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-brands-400.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-brands-400.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-brands-400.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-regular-400.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-regular-400.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-regular-400.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-regular-400.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-regular-400.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-solid-900.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-solid-900.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-solid-900.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-solid-900.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/fontawesome/webfonts/fa-solid-900.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/applewatch.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/camara.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/cameras.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/headphone.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/headphones-2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/headphones.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/horizontal-news-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/horizontal-news-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/horizontal-news-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/ipad.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/iphone-8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/iphone-x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/iphone.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/iphonec.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/macbook.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/magic-mouse.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/news-apple.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/news-fashion.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/news-twitter.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/nike.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/oneplus-6t.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/powerbank.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/puma.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/reebok.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/remote.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/shoes.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/smartspeakers.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/speakers.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/watch-2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/cards/watch.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/10.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/11.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/13.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/14.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/15.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/16.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/17.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/18.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/19.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/20.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/21.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/22.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/23.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/24.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/25.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/26.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/27.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/28.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/29.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/30.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/31.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/32.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/33.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/34.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/35.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/36.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/37.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/38.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/39.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/40.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/404-bg.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/41.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/42.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/43.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/44.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/45.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/46.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/47.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/48.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/5.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/6.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/7.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/8.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/9.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/Intro-footer.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/breadcrumb-bg.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/chat-bg.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/error-2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/error.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/error.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/faq-search.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/flat-bg.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/intro-app.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/intro-features.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/intro-slide-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/maintenance.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/post-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/post-2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/post-3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/profile-bg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/search.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/wave.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/web-search-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallery/web-search.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/icon/apple-watch.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/icon/bowling.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/icon/football.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/icon/laptop.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/icon/map-marker.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/icon/printer.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/logo/generic-logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/logo/login-logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/logo/materialize-logo-big.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/logo/materialize-logo-color.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/logo/materialize-logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/misch/signature-scan.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/misch/style-typography.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/10.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/11.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/12.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/8.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/user/9.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/custom/custom-script.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/custom/custom-script.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-carousel.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-carousel.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-feature-discovery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-feature-discovery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-media.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-media.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-modals.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-modals.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-scrollspy.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-scrollspy.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-toasts.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/advance-ui-toasts.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-calendar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-calendar.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-chat.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-chat.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-contacts.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-contacts.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-email-content.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-email-content.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-email.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-email.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-todo.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/app-todo.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/card-advanced.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/card-advanced.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/cards-extended.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/cards-extended.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/charts-chartist.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/charts-chartist.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/charts-chartjs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/charts-chartjs.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/charts-sparklines.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/charts-sparklines.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-animation.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-animation.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-grid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-grid.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-transition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-transition.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-typography.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/css-typography.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/customizer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/customizer.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/dashboard-analytics.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/dashboard-analytics.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/dashboard-ecommerce.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/dashboard-ecommerce.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/dashboard-modern.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/dashboard-modern.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/data-tables.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/data-tables.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/eCommerce-products-page.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/eCommerce-products-page.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-nestable.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-nestable.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-range-slider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-range-slider.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-sweetalert.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-sweetalert.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-translation.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/extra-components-translation.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-elements.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-elements.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-file-uploads.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-file-uploads.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-layouts.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-layouts.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-masks.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-masks.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-validation.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-validation.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-wizard.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/form-wizard.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/fullcalendar-script.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/fullcalendar-script.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/fullscreen-slider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/fullscreen-slider.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/google-map-script.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/google-map-script.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/intro.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/intro.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/media-gallery-page.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/media-gallery-page.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/media-hover-effects.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/media-hover-effects.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-contact.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-contact.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-item.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-item.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-knowledge.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-knowledge.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-profile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/page-profile.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/ui-alerts.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/ui-alerts.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/ui-chips.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/ui-chips.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/ui-navbar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/ui-navbar.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/vectormap-script.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/scripts/vectormap-script.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/vendors.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/animate-css/animate.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist-plugin-fill-donut.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist-plugin-tooltip.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist-plugin-tooltip.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist-plugin-tooltip.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/chartist.min.js.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/scss/chartist.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartist-js/scss/settings/_chartist-settings.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartjs/chart.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartjs/chart.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/chartjs/oldchart.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/css/dataTables.bootstrap4.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/css/dataTables.bootstrap4.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/css/dataTables.material.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/css/dataTables.material.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/css/jquery.dataTables.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/css/jquery.dataTables.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/css/select.dataTables.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/extensions/responsive/License.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/extensions/responsive/Readme.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/extensions/responsive/css/responsive.dataTables.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/extensions/responsive/js/dataTables.responsive.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/images/sort_asc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/images/sort_asc_disabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/images/sort_both.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/images/sort_desc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/images/sort_desc_disabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/js/dataTables.bootstrap4.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/js/dataTables.bootstrap4.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/js/dataTables.material.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/js/dataTables.material.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/js/dataTables.select.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/js/jquery.dataTables.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/data-tables/js/jquery.dataTables.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/css/demo.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/css/dropify.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/css/dropify.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/fonts/dropify.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/fonts/dropify.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/fonts/dropify.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/fonts/dropify.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/js/dropify.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/dropify/js/dropify.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/formatter/formatter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/formatter/formatter.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/formatter/jquery.formatter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/formatter/jquery.formatter.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/formatter/scale.fix.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/css/fullcalendar.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/css/fullcalendar.print.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/js/fullcalendar.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/js/gcal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/js/gcal.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/js/lang-all.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/js/locale-all.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/lib/jquery-ui.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/lib/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/lib/moment.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/af.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ar-dz.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ar-kw.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ar-ly.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ar-ma.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ar-sa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ar-tn.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/bg.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/bs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/cs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/da.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/de-at.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/de-ch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/de.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/el.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/en-au.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/en-ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/en-gb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/en-ie.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/en-nz.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/es-do.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/es-us.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/es.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/et.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/eu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/fa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/fi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/fr-ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/fr-ch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/fr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/gl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/he.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/hi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/hr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/hu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/id.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/is.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/it.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ja.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ka.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/kk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ko.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/lb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/lt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/lv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/mk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ms-my.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ms.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/nb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/nl-be.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/nl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/nn.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/pl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/pt-br.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/pt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ro.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/ru.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/sk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/sl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/sq.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/sr-cyrl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/sr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/sv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/th.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/tr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/uk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/vi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/zh-cn.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/fullcalendar/locale/zh-tw.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/hover-effects/media-hover-effects.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/imagesloaded.pkgd.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/ionRangeSlider/css/ion.rangeSlider.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/ionRangeSlider/css/ion.rangeSlider.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/ionRangeSlider/css/ion.rangeSlider.skinFlat.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/ionRangeSlider/img/sprite-skin-flat.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/ionRangeSlider/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/ionRangeSlider/js/ion.rangeSlider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/ionRangeSlider/js/ion.rangeSlider.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-cookies/jquery.cookies.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-jvectormap/jquery-jvectormap-world-mill-en.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-jvectormap/jquery-jvectormap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-jvectormap/jquery-jvectormap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-sortable.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/additional-methods.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/additional-methods.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/jquery.validate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/jquery.validate.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ar.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_bg.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_bg.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_bn_BD.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_bn_BD.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ca.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_cs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_cs.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_da.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_da.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_de.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_de.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_el.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_el.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_es.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_es.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_es_AR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_es_AR.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_es_PE.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_es_PE.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_et.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_et.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_eu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_eu.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_fa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_fa.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_fi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_fi.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_fr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_fr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ge.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ge.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_gl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_gl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_he.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_he.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_hr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_hr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_hu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_hu.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_hy_AM.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_hy_AM.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_id.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_id.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_is.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_is.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_it.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_it.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ja.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ja.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ka.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ka.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_kk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_kk.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ko.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ko.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_lt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_lt.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_lv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_lv.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_my.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_my.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_nl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_nl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_no.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_no.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_pl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_pl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_pt_BR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_pt_BR.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_pt_PT.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_pt_PT.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ro.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ro.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ru.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_ru.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_si.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_si.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sk.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sr_lat.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sr_lat.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_sv.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_th.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_th.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_tj.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_tj.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_tr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_tr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_uk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_uk.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_vi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_vi.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_zh.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_zh.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_zh_TW.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/messages_zh_TW.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_de.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_de.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_es_CL.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_es_CL.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_fi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_fi.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_nl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_nl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_pt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-validation/localization/methods_pt.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery.nestable/jquery.nestable.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery.nestable/nestable.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/magnific-popup/jquery.magnific-popup.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/magnific-popup/jquery.magnific-popup.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/magnific-popup/magnific-popup.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/masonry.pkgd.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/materialize-stepper/materialize-stepper.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/materialize-stepper/materialize-stepper.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/noUiSlider/nouislider.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/noUiSlider/nouislider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/noUiSlider/nouislider.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/noUiSlider/nouislider.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/prism/prism.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/prism/prism.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sortable/jquery-sortable-min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sparkline/jquery.sparkline.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/button-loader.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/buttons.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/content.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/icons.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/icons/error.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/icons/info.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/icons/success.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/icons/warning.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/css/text.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/sweetalert.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/sweetalert.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/sweetalert_old.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/sweetalert/sweetalert_old.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/jquery.tinymce.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/langs/readme.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/license.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/advlist/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/anchor/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/autolink/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/autoresize/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/autosave/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/bbcode/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/charmap/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/code/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/codesample/css/prism.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/codesample/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/colorpicker/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/contextmenu/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/directionality/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-cool.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-cry.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-embarassed.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-frown.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-innocent.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-kiss.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-laughing.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-money-mouth.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-sealed.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-smile.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-surprised.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-tongue-out.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-undecided.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-wink.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/img/smiley-yell.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/emoticons/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/fullpage/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/fullscreen/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/help/img/logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/help/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/hr/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/image/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/imagetools/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/importcss/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/insertdatetime/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/legacyoutput/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/link/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/lists/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/media/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/nonbreaking/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/noneditable/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/pagebreak/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/paste/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/preview/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/print/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/save/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/searchreplace/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/spellchecker/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/tabfocus/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/table/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/template/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/textcolor/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/textpattern/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/toc/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/visualblocks/css/visualblocks.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/visualblocks/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/visualchars/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/plugins/wordcount/plugin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/content.inline.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/content.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/content.mobile.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce-mobile.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce-small.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce-small.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce-small.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce-small.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/fonts/tinymce.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/img/anchor.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/img/loader.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/img/object.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/img/trans.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/skin.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/skins/lightgray/skin.mobile.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/themes/inlite/theme.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/themes/mobile/theme.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/themes/modern/theme.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/tinymce/tinymce.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/translator/jqueryTranslator.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/vendors.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/waypoints/jquery.waypoints.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/waypoints/noframework.waypoints.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/waypoints/zepto.waypoints.min.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/custom/custom.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/custom/custom.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/layouts/page-center.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/layouts/style-fullscreen.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/layouts/style-fullscreen.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/layouts/style-horizontal.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/layouts/style-horizontal.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/plugins/media-hover-effects.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/collapsible-menu/materialize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/collapsible-menu/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fixed-menu/materialize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fixed-menu/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Bold.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Bold.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Light.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Light.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Medium.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Medium.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Regular.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Thin.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/fonts/roboto/Roboto-Thin.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/horizontal-menu/materialize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/horizontal-menu/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/overlay-menu/materialize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/overlay-menu/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/semi-dark-menu/materialize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/css/themes/semi-dark-menu/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Bold.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Bold.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Light.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Light.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Medium.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Medium.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Regular.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Thin.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/fonts/roboto/Roboto-Thin.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/gallary/12.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/images/logo/logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/custom-script.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/js/custom-script.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_badges.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_buttons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_cards.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_carousel.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_chips.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_collapsible.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_color.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_dropdown.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_global.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_grid.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_icons-material-design.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_materialbox.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_mixins.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_modal.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_navbar.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_normalize.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_preloader.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_pulse.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_roboto.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_sideNav.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_slider.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_table_of_contents.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_tabs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_tapTarget.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_toast.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_tooltip.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_transitions.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/_waves.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/date_picker/_default.date.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/date_picker/_default.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/date_picker/_default.time.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_checkboxes.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_file-input.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_forms.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_input-fields.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_radio-buttons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_range.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_select.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/components/forms/_switches.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/custom/custom.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/materialize.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/style.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_avatar.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_breadcrumb.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_calendar.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_card.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_chart.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_color.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_footer.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_forms.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_global.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_header.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_helper.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_icons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_miscellaneous.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_preloader.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_pulse.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_sidebar.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_slideout.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_table.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/layouts/style-fullscreen.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/layouts/style-horizontal.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_blog.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_dashboard.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_email.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_error.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_gallary.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_icon.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_invoice.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_login.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_map.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_pricing.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_product.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme-components/pages/_profile.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/theme.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/collapsible-menu/_theme.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/collapsible-menu/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/collapsible-menu/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/default/_theme.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/default/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/default/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/fixed-menu/_theme.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/fixed-menu/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/fixed-menu/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/horizontal-menu/_theme.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/horizontal-menu/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/horizontal-menu/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/overlay-menu/_theme.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/overlay-menu/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/overlay-menu/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/semi-dark-menu/_theme.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/semi-dark-menu/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/sass/themes/semi-dark-menu/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/admin/vendors/jquery-3.2.1.min.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1114,9 +2084,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39116204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1210,7 +2180,8 @@
     <MESSAGE value="Added a basic photo permission check" />
     <MESSAGE value="Added a logout" />
     <MESSAGE value="Improved login and register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved login and register" />
+    <MESSAGE value="Authorization levels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authorization levels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1241,27 +2212,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripsServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#32#231#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt" />
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/PhotoServlet.kt" />
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/ContactServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/RequestingServlet.kt" />
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/a.kt" />
     <entry file="file://$PROJECT_DIR$/web/js/google_map.js" />
     <entry file="file://$PROJECT_DIR$/web/404.html" />
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/a.kt" />
@@ -1368,7 +2318,7 @@
         <state relative-caret-position="255">
           <caret line="15" column="38" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="15" selection-end-column="38" />
           <folding>
-            <element signature="e#23#221#0" expanded="true" />
+            <element signature="e#23#221#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1409,7 +2359,7 @@
         <state relative-caret-position="309">
           <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
           <folding>
-            <element signature="e#23#177#0" expanded="true" />
+            <element signature="e#23#177#0" expanded="false" />
             <element signature="n#!!doc;n#PhotoManager#0" expanded="false" />
             <element signature="n#!!block;n#getPhotoArray#0;n#!!block;n#PhotoManager#0" expanded="false" />
             <element signature="n#!!block;n#getTripArray#0;n#!!block;n#PhotoManager#0" expanded="false" />
@@ -1453,42 +2403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/LogoutServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="103" column="74" lean-forward="false" selection-start-line="103" selection-start-column="74" selection-end-line="103" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1516,17 +2434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/LoginServlet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-          <folding>
-            <element signature="e#29#353#0" expanded="false" />
-            <marker date="1551337473484" expanded="true" signature="1421:1493" ph="SELECT id FR... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/TripServlet.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1540,7 +2447,7 @@
         <state relative-caret-position="310">
           <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
-            <element signature="e#23#221#0" expanded="true" />
+            <element signature="e#23#221#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1574,7 +2481,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/servlets/IndexServlet.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1586,6 +2493,97 @@
           <folding>
             <marker date="1553935780283" expanded="true" signature="286:319" ph="SELECT role users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/LogoutServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/LoginServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding>
+            <element signature="e#29#353#0" expanded="false" />
+            <marker date="1551337473484" expanded="true" signature="1421:1493" ph="SELECT id FR... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="106" column="55" lean-forward="false" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/js/custom/custom-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-573">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/UsersServlet.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/erezbiox1/admin/AdminFilter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/old_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="33" column="78" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/old_register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="58" column="52" lean-forward="false" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1070">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="76" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/user-register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="91" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
