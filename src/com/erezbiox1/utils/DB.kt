@@ -21,7 +21,7 @@ object DB {
 
 }
 
-fun sql(query: String, vararg objects: Any, single: Boolean = true, function: ((ResultSet) -> Unit)? = null) {
+fun sql(query: String, vararg objects: Any?, single: Boolean = true, function: ((ResultSet) -> Unit)? = null) {
     val db = DB.database.connection
 
     val statement = db.prepareStatement(query)

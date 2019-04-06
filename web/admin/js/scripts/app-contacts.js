@@ -8,11 +8,11 @@ $(document).ready(function () {
     };
 
     var table = $("#data-table-contact").DataTable({
-        sScrollY: calcDataTableHeight(),
+        /*sScrollY: calcDataTableHeight(),*/
         scrollCollapse: true,
         paging: true,
         responsive: true,
-        lengthMenu: [9],
+        lengthMenu: [4],
         bSort: false
     });
 
@@ -56,12 +56,6 @@ $(document).ready(function () {
         });
     }
 
-    // Favorite star click
-    $(".favorite i").on("click", function (e) {
-        e.preventDefault();
-        $(this).toggleClass("amber-text");
-    });
-
     // Toggle class of sidenav
     $("#contact-sidenav").sidenav({
         onOpenStart: function () {
@@ -70,15 +64,6 @@ $(document).ready(function () {
         onCloseEnd: function () {
             $("#sidebar-list").removeClass("sidebar-show");
         }
-    });
-
-    // Remove Row for datatable in responsive
-    $(document).on("click", "i.delete", function () {
-        var $tr = $(this).closest("tr");
-        if ($tr.prev().hasClass("parent")) {
-            $tr.prev().remove();
-        }
-        $tr.remove();
     });
 
     $(".contact-list li").on("click", function () {

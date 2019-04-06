@@ -86,98 +86,94 @@
                 <div>
                     <div class="modal border-radius-6" id="createUser">
                         <div class="modal-content">
-                            <h5 class="mt-0">Create new contact</h5>
+                            <h5 class="mt-0">Create new user</h5>
                             <hr>
                             <div class="row">
-                                <form class="col s12">
+                                <form onsubmit="return userForm(event)" class="col s12">
                                     <div class="row">
                                         <div class="input-field col m6 s12"><i class="material-icons prefix"> perm_identity</i>
-                                            <input class="validate" id="first_name" type="text">
-                                            <label for="first_name">First Name</label>
+                                            <input name="username" class="validate" id="create_username" type="text">
+                                            <label for="create_username">Username</label>
                                         </div>
                                         <div class="input-field col m6 s12"><i class="material-icons prefix"> perm_identity</i>
-                                            <input class="validate" id="last_name" type="text">
-                                            <label for="last_name">Last Name</label>
-                                        </div>
-                                        <div class="input-field col m6 s12"><i class="material-icons prefix"> business</i>
-                                            <input class="validate" id="company" type="text">
-                                            <label for="company">Company</label>
-                                        </div>
-                                        <div class="input-field col m6 s12"><i class="material-icons prefix"> business_center</i>
-                                            <input class="validate" id="business" type="text">
-                                            <label for="business">Job Title</label>
+                                            <input name="password" class="validate" id="create_password" type="password">
+                                            <label for="create_password">Password</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12"><i class="material-icons prefix"> email</i>
-                                            <input class="validate" id="email" type="email">
-                                            <label for="email">Email</label>
+                                            <input name="email" class="validate" id="create_email" type="email">
+                                            <label for="create_email">Email</label>
                                         </div>
-                                        <div class="input-field col s12"><i class="material-icons prefix"> call</i>
-                                            <input class="validate" id="phone" type="number">
-                                            <label for="phone">Phone</label>
-                                        </div>
-                                        <div class="input-field col s12"><i class="material-icons prefix"> note</i>
-                                            <input class="validate" id="notes" type="text">
-                                            <label for="notes">Notes</label>
+                                        <div class="input-field col s12"><i class="material-icons prefix"> assignment</i>
+                                            <select name="role" class="validate" id="create_role">
+                                                <option value="member">Member</option>
+                                                <option value="family">Family</option>
+                                                <option value="admin">Admin</option>
+                                            </select>
+                                            <label for="create_role">Role</label>
                                         </div>
                                     </div>
+                                    <input type="hidden" name="type" value="create">
+                                    <input type="hidden" name="id" value="0">
+                                    <div class="modal-footer"><button type="submit" class="btn modal-close waves-effect waves-light mr-2">Create User</button></div>
                                 </form>
                             </div>
                         </div>
-                        <div class="modal-footer"><a class="btn modal-close waves-effect waves-light mr-2">Add Contact</a></div>
                     </div>
                     <%
                         for(String[] user: users){
-                            String username = user[0];
-                            String email = user[1];
-                            String role = user[2];
-                            String name = user[3];
+                            String id = user[0];
+                            String username = user[1];
+                            String email = user[2];
+                            String role = user[3];
                             String ip = user[4];
                             String time = user[5];
+
+                            String admin = "", family = "", member = "";
+                            if(role.equals("admin"))
+                                admin = "selected";
+                            if(role.equals("family"))
+                                family = "selected";
+                            else
+                                member = "selected";
                     %>
-                    <div class="modal border-radius-6" id="<%=username%>_actions">
+                    <div class="modal border-radius-6" id="<%=id%>_actions">
                         <div class="modal-content">
-                            <h5 class="mt-"><%=username%> - Actions</h5>
+                            <h5 class="mt-0"><%=username%> - Actions</h5>
                             <hr>
                             <div class="row">
-                                <form class="col s12">
+                                <form onsubmit="return userForm(event)" class="col s12">
                                     <div class="row">
                                         <div class="input-field col m6 s12"><i class="material-icons prefix"> perm_identity</i>
-                                            <input class="validate" id="<%=username%>_first_name" type="text">
-                                            <label for="first_name">First Name</label>
+                                            <input type="text" name="username" class="validate" id="<%=id%>_username" value="<%=username%>">
+                                            <label for="<%=id%>_username">Username</label>
                                         </div>
                                         <div class="input-field col m6 s12"><i class="material-icons prefix"> perm_identity</i>
-                                            <input class="validate" id="<%=username%>_last_name" type="text">
-                                            <label for="last_name">Last Name</label>
-                                        </div>
-                                        <div class="input-field col m6 s12"><i class="material-icons prefix"> business</i>
-                                            <input class="validate" id="<%=username%>_company" type="text">
-                                            <label for="company">Company</label>
-                                        </div>
-                                        <div class="input-field col m6 s12"><i class="material-icons prefix"> business_center</i>
-                                            <input class="validate" id="<%=username%>_business" type="text">
-                                            <label for="business">Job Title</label>
+                                            <input type="password" name="password" class="validate" id="<%=id%>_password" value="notapassword">
+                                            <label for="<%=id%>_password">Password</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12"><i class="material-icons prefix"> email</i>
-                                            <input class="validate" id="<%=username%>_email" type="email">
-                                            <label for="email">Email</label>
+                                            <input type="email" name="email" class="validate" id="<%=id%>_email" value="<%=email%>">
+                                            <label for="<%=id%>_email">Email</label>
                                         </div>
-                                        <div class="input-field col s12"><i class="material-icons prefix"> call</i>
-                                            <input class="validate" id="<%=username%>_phone" type="number">
-                                            <label for="phone">Phone</label>
-                                        </div>
-                                        <div class="input-field col s12"><i class="material-icons prefix"> note</i>
-                                            <input class="validate" id="<%=username%>_notes" type="text">
-                                            <label for="notes">Notes</label>
+                                        <div class="input-field col s12"><i class="material-icons prefix"> assignment</i>
+                                            <select name="role" class="validate" id="<%=id%>_role">
+                                                <option value="member" <%=member%>>Member</option>
+                                                <option value="family" <%=family%>>Family</option>
+                                                <option value="admin" <%=admin%>>Admin</option>
+                                            </select>
+                                            <label for="<%=id%>_role">Role</label>
                                         </div>
                                     </div>
+                                    <input type="hidden" name="type" value="change">
+                                    <input type="hidden" name="id" value="<%=id%>">
+                                    <div class="modal-footer"><button type="submit" class="btn modal-close waves-effect waves-light mr-2">Save</button></div>
                                 </form>
                             </div>
                         </div>
-                        <div class="modal-footer"><a class="btn modal-close waves-effect waves-light mr-2">Save</a></div>
                     </div>
                     <%
                         }
@@ -225,57 +221,45 @@
                                     <tr>
                                         <th></th>
                                         <th>Username</th>
-                                        <th>Full Name</th>
                                         <th>Email</th>
                                         <th>Rank</th>
-                                        <th>Info</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <%
-                                        //{username, email, role, name, ip, time}
+                                        //{id, username, email, role, ip, time}
                                         for(String[] user: users){
-                                            String username = user[0];
-                                            String email = user[1];
-                                            String role = user[2];
-                                            String name = user[3];
+                                            String id = user[0];
+                                            String username = user[1];
+                                            String email = user[2];
+                                            String role = user[3];
                                             String ip = user[4];
                                             String time = user[5];
 
                                             String admin = "grey", family = "grey", member = "grey";
-                                            if(Objects.equals(role, "admin"))
+                                            if(role.equals("admin"))
                                                 admin = "amber";
-                                            else if(Objects.equals(role, "family"))
+                                            else if(role.equals("family"))
                                                 family = "purple";
                                             else
                                                 member = "green";
                                     %>
-                                    <tr>
-                                        <td class="center-align"><span class="avatar-contact avatar-online"><img src="https://robohash.org/<%=email%>?gravatar=yes" alt="avatar"></span></td>
-                                        <td><%=username%></td>
-                                        <td><%=name%></td>
-                                        <td><%=email%></td>
-                                        <td><span class="badge <%=admin%> waves-effect">Admin</span><span> </span><span class="badge <%=family%> waves-effect">Family</span><span> </span><span class="badge <%=member%> waves-effect">Member</span>
+                                    <tr style="height: 80px !important;">
+                                        <td class="datum center-align"><span class="avatar-contact avatar-online"><img src="https://robohash.org/<%=email%>?gravatar=yes" alt="avatar"></span></td>
+                                        <td class="datum"><%=username%></td>
+                                        <td class="datum"><%=email%></td>
+                                        <td class="datum"><span class="badge <%=admin%> waves-effect">Admin</span><span> </span><span class="badge <%=family%> waves-effect">Family</span><span> </span><span class="badge <%=member%> waves-effect">Member</span>
                                         </td>
-                                        <td><span>IP: <%=ip%></span><br><span>Time: <%=time%></span></td>
-                                        <td><a class="modal-trigger" href="#<%=username%>_actions"><i class="material-icons">build</i></a><i class="material-icons">info</i><i class="material-icons delete">delete_outline</i></td>
+                                        <td>
+                                            <a class="modal-trigger" href="#<%=id%>_actions"><i class="material-icons">build</i></a>
+                                            <i onclick="swal('Info', 'IP: <%=ip%>, Time: <%=time%>', 'info')" class="material-icons">info</i>
+                                            <i onclick="deleteUser(<%=id%>)" class="material-icons">delete_outline</i>
+                                        </td>
                                     </tr>
                                     <%
                                         }
                                     %>
-                                    <!--
-                                    <tr>
-                                        <td class="center-align"><span class="avatar-contact avatar-online"><img src="https://robohash.org/Erezbiox1@gmail.com?gravatar=yes" alt="avatar"></span></td>
-                                        <td>Erezbiox1</td>
-                                        <td>Erez Rotem</td>
-                                        <td>Erezbiox1@gmail.com</td>
-                                        <td><span class="badge amber waves-effect">Admin</span><span> </span><span class="badge grey waves-effect">Family</span><span> </span><span class="badge grey waves-effect">Member</span>
-                                        </td>
-                                        <td><span>IP: 192.168.1.1</span><br><span>Time: 19:12 - 17/3/2019</span></td>
-                                        <td><a class="modal-trigger" href="#Erezbiox1_actions"><i class="material-icons">build</i></a><i class="material-icons">info</i><i class="material-icons delete">delete_outline</i></td>
-                                    </tr>
-                                    -->
                                     </tbody>
                                 </table>
                             </div>
@@ -291,12 +275,15 @@
         <div class="container"><span>Erezbiox1 © 2019</span><span class="right hide-on-small-only">All sources available in<a href="https://github.com/Erezbiox1/ErezGallery"> GITHUB</a></span></div>
     </div>
 </footer>
-<script src="<%=context%>/admin/js/materialize.min.js" type="text/javascript"></script>
+<%--<script src="<%=context%>/admin/js/materialize.min.js" type="text/javascript"></script>--%>
 <script src="<%=context%>/admin/js/vendors.min.js" type="text/javascript"></script>
 <script src="<%=context%>/admin/vendors/sweetalert/sweetalert.min.js" type="text/javascript"></script>
-<script src="<%=context%>/admin/js/custom/custom-script.js" type="text/javascript"></script>
-<script src="<%=context%>/admin/js/plugins.js" type="text/javascript"></script>
-<script src="<%=context%>/admin/js/scripts/app-contacts.js" type="text/javascript"></script>
+
 <script src="<%=context%>/admin/vendors/data-tables/js/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="<%=context%>/admin/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+
+<script src="<%=context%>/admin/js/plugins.js" type="text/javascript"></script>
+<script src="<%=context%>/admin/js/custom/custom-script.js" type="text/javascript"></script>
+
+<script src="<%=context%>/admin/js/scripts/app-contacts.js" type="text/javascript"></script>
 </html>
