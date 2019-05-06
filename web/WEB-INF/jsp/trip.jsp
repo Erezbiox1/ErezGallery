@@ -9,7 +9,7 @@
                     String name = photo[2];
             %>
                 <a class="gallery-item" href="<%=context%>p/<%=id%>">
-                    <img alt="Photo" src="<%=context%>photos/<%=id%>_small.png">
+                    <img alt="Photo" src="<%=context%>photos/<%=id%>_small.jpg">
                     <span class="overlay">
                         <h2><%=name%></h2>
                         <span><%=trip%></span>
