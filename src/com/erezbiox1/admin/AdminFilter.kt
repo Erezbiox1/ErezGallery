@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse
  * (C) 2019 Erez Rotem All Rights Reserved.
  */
 class AdminFilter : Filter {
-    val debug = true
+    val debug = false
     val allowed = listOf(
             "/admin/login",
             "/admin/register",

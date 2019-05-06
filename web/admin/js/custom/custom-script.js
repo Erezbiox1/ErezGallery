@@ -128,6 +128,25 @@ function deleteUser(id){
     });
 }
 
+function setRole(id, role){
+    $.ajax({
+        type: "POST",
+        data: {
+            type: "role",
+            id: id,
+            role: role
+        },
+        success: function (text) {
+            if(text === "success"){
+                window.location.reload(true);
+            }else{
+                swal("Error!", text, "error")
+            }
+        }
+    });
+
+}
+
 function WIP(){
     swal("Error!", "This section of the admin panel is not implemented yet.", "warning");
 }

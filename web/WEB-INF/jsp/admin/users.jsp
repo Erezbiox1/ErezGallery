@@ -5,6 +5,7 @@
 <%
     String context = "/gallery/";
     String[][] users = (String[][]) request.getAttribute("users");
+    String online = (String) request.getAttribute("online");
 %>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -186,8 +187,8 @@
                                 <div class="sidebar-details">
                                     <h5 class="m-0 sidebar-title"><i class="material-icons app-header-icon text-top">perm_identity</i> Users</h5>
                                     <div class="mt-10 pt-2">
-                                        <p class="m-0 subtitle font-weight-700">Total number of online users</p>
-                                        <p class="m-0 text-muted">1457 Online</p>
+                                        <p class="m-0 subtitle font-weight-700">Total number of unique visits</p>
+                                        <p class="m-0 text-muted"><%=online%> Visits</p>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +250,7 @@
                                         <td class="datum center-align"><span class="avatar-contact avatar-online"><img src="https://robohash.org/<%=email%>?gravatar=yes" alt="avatar"></span></td>
                                         <td class="datum"><%=username%></td>
                                         <td class="datum"><%=email%></td>
-                                        <td class="datum"><span class="badge <%=admin%> waves-effect">Admin</span><span> </span><span class="badge <%=family%> waves-effect">Family</span><span> </span><span class="badge <%=member%> waves-effect">Member</span>
+                                        <td class="datum"><span onclick="setRole(<%=id%>, 'admin')" class="badge <%=admin%> waves-effect">Admin</span><span> </span><span onclick="setRole(<%=id%>, 'family')" class="badge <%=family%> waves-effect">Family</span><span> </span><span onclick="setRole(<%=id%>, 'member')" class="badge <%=member%> waves-effect">Member</span>
                                         </td>
                                         <td>
                                             <a class="modal-trigger" href="#<%=id%>_actions"><i class="material-icons">build</i></a>

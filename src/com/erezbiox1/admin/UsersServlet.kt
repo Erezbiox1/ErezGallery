@@ -1,9 +1,9 @@
 package com.erezbiox1.admin
 
 import com.erezbiox1.AbstractServlet
+import com.erezbiox1.SessionCounter
 import com.erezbiox1.utils.get
 import com.erezbiox1.utils.sql
-import java.sql.Date
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
@@ -36,6 +36,7 @@ class UsersServlet : AbstractServlet("admin/users", "") {
         }
 
         request.setAttribute("users", list.toTypedArray())
+        request.setAttribute("online", SessionCounter.activeSessions.toString())
 
         super.doGet(request, response)
     }
@@ -68,6 +69,12 @@ class UsersServlet : AbstractServlet("admin/users", "") {
                         sql("UPDATE users SET username = ?, email = ?, role = ? WHERE id=?", username, email, role, id)
                     else
                         sql("UPDATE users SET username = ?, password = ?, email = ?, role = ? WHERE id=?", username, password, email, role, id)
+                }
+
+                "role" -> {
+                    val id = request.getParameter("id")
+                    val role = request.getParameter("role")
+                    sql("UPDATE users SET role = ? WHERE id=?", role, id)
                 }
 
                 "delete" -> {
