@@ -60,9 +60,9 @@ object PhotoManager {
             }
         }
         if(trip == null)
-            sql("SELECT * FROM photos", single = false, function = function)
+            sql("SELECT * FROM photos ORDER BY `order` DESC, id", single = false, function = function)
         else
-            sql("SELECT * FROM photos WHERE trip=?", trip, single = false, function = function)
+            sql("SELECT * FROM photos WHERE trip=? ORDER BY `order`, id", trip, single = false, function = function)
 
         return list
     }

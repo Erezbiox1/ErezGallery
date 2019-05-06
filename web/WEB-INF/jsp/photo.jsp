@@ -11,7 +11,7 @@
                 <h2 class="eg-heading" style="display: inline-block"><%=name%></h2>
                 <a href="<%=context%>t/<%=tripFile%>" style="float: right;"><i><%=trip%></i></a>
             </div>
-            <figure><img src="<%=context%>photos/<%=id%>_big.png" alt="Photo" class="img-responsive">
+            <figure><img src="<%=context%>photos/<%=id%>_big.jpg" alt="Photo" class="img-responsive">
                 <figcaption><%=desc%></figcaption>
             </figure>
 
